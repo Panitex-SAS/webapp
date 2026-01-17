@@ -26,16 +26,6 @@ export default function ImageCarousel() {
     setCurrentIndex(index);
   };
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
   return (
     <div className="relative w-full h-full overflow-hidden">
       {/* Images */}
