@@ -14,7 +14,7 @@ export const siteConfig = {
   
   // Contact information
   contact: {
-    email: "info@panitex.com",
+    email: "rene.silva@panitex.com.co",
     phone: "+57 315 852 2816",
     address: "Bogotá, Colombia",
   },
