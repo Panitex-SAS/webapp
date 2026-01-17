@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ImageCarousel from "./components/ImageCarousel";
 import industriesData from "@/app/data/industries.json";
 
@@ -51,25 +52,46 @@ export default function Home() {
       {/* Industries Section */}
       <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
             Industrias
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {industries.map((industry) => (
-              <div key={industry.id} className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold mb-3 text-red-600">{industry.name}</h3>
-                <p className="text-gray-600 mb-4">
-                  {industry.description}
-                </p>
-                <Link
-                  href={`/industrias/${industry.id}`}
-                  className="text-red-600 hover:text-red-700 font-medium inline-flex items-center"
-                >
-                  Ver proyectos
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+              <div 
+                key={industry.id} 
+                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+              >
+                {/* Industry Image */}
+                {industry.image && (
+                  <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden">
+                    <Image
+                      src={industry.image}
+                      alt={industry.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                
+                <h3 className="text-xl font-semibold mb-3 text-red-600 transition-all duration-300">
+                  {industry.name}
+                </h3>
+                
+                {/* Hidden content that appears on hover */}
+                <div className="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out overflow-hidden">
+                  <p className="text-gray-600 mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    {industry.description}
+                  </p>
+                  <Link
+                    href={`/industrias/${industry.id}`}
+                    className="text-red-600 hover:text-red-700 font-medium inline-flex items-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 delay-100"
+                  >
+                    Ver proyectos
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>

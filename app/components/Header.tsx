@@ -17,7 +17,10 @@ export default function Header() {
   const industries = industriesData as Industry[];
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
+    <header 
+      className="sticky top-0 z-50 bg-white border-b shadow-sm"
+      onMouseLeave={() => setIsIndustriesOpen(false)}
+    >
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
@@ -49,7 +52,6 @@ export default function Header() {
             <li 
               className="relative"
               onMouseEnter={() => setIsIndustriesOpen(true)}
-              onMouseLeave={() => setIsIndustriesOpen(false)}
             >
               <button 
                 className="text-gray-700 hover:text-red-600 transition-colors font-medium flex items-center"
@@ -64,23 +66,6 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              
-              {/* Dropdown Menu */}
-              {isIndustriesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border rounded-lg shadow-lg py-3 px-4">
-                  <div className="flex gap-6 whitespace-nowrap">
-                    {industries.map((industry) => (
-                      <Link
-                        key={industry.id}
-                        href={`/industrias/${industry.id}`}
-                        className="text-gray-700 hover:text-red-600 transition-colors font-medium"
-                      >
-                        {industry.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
             </li>
             <li>
               <Link 
@@ -93,6 +78,28 @@ export default function Header() {
           </ul>
         </div>
       </nav>
+      
+      {/* Full Width Dropdown Menu */}
+      {isIndustriesOpen && (
+        <div 
+          className="absolute left-0 right-0 top-full bg-white border-t shadow-lg"
+          onMouseEnter={() => setIsIndustriesOpen(true)}
+        >
+          <div className="max-w-7xl mx-auto px-6 py-6">
+            <div className="flex justify-center gap-8 flex-wrap">
+              {industries.map((industry) => (
+                <Link
+                  key={industry.id}
+                  href={`/industrias/${industry.id}`}
+                  className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg"
+                >
+                  {industry.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
