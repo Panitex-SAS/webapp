@@ -1,20 +1,26 @@
 [
   {
-    "id": "1",
-    "name": "Industria 1",
-    "description": "Descripción de la industria 1 pendiente...",
+    "id": "maritimo",
+    "name": "Marítimo",
+    "description": "Soluciones especializadas para el sector marítimo",
     "image": ""
   },
   {
-    "id": "2",
-    "name": "Industria 2",
-    "description": "Descripción de la industria 2 pendiente...",
+    "id": "construccion",
+    "name": "Construcción",
+    "description": "Servicios integrales para proyectos de construcción",
     "image": ""
   },
   {
-    "id": "3",
-    "name": "Industria 3",
-    "description": "Descripción de la industria 3 pendiente...",
+    "id": "mineria",
+    "name": "Minería",
+    "description": "Experiencia en operaciones mineras y logística",
+    "image": ""
+  },
+  {
+    "id": "energia",
+    "name": "Energía",
+    "description": "Proyectos en el sector energético y renovables",
     "image": ""
   }
 ]

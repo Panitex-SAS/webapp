@@ -1,0 +1,74 @@
+[
+  {
+    "id": "proyecto-1",
+    "industryId": "maritimo",
+    "name": "Proyecto Marítimo 1",
+    "description": "Descripción detallada del proyecto marítimo 1...",
+    "client": "Cliente ejemplo",
+    "year": "2024",
+    "image": ""
+  },
+  {
+    "id": "proyecto-2",
+    "industryId": "maritimo",
+    "name": "Proyecto Marítimo 2",
+    "description": "Descripción detallada del proyecto marítimo 2...",
+    "client": "Cliente ejemplo",
+    "year": "2023",
+    "image": ""
+  },
+  {
+    "id": "proyecto-3",
+    "industryId": "construccion",
+    "name": "Proyecto Construcción 1",
+    "description": "Descripción detallada del proyecto de construcción 1...",
+    "client": "Cliente ejemplo",
+    "year": "2024",
+    "image": ""
+  },
+  {
+    "id": "proyecto-4",
+    "industryId": "construccion",
+    "name": "Proyecto Construcción 2",
+    "description": "Descripción detallada del proyecto de construcción 2...",
+    "client": "Cliente ejemplo",
+    "year": "2023",
+    "image": ""
+  },
+  {
+    "id": "proyecto-5",
+    "industryId": "mineria",
+    "name": "Proyecto Minería 1",
+    "description": "Descripción detallada del proyecto minero 1...",
+    "client": "Cliente ejemplo",
+    "year": "2025",
+    "image": ""
+  },
+  {
+    "id": "proyecto-6",
+    "industryId": "mineria",
+    "name": "Proyecto Minería 2",
+    "description": "Descripción detallada del proyecto minero 2...",
+    "client": "Cliente ejemplo",
+    "year": "2024",
+    "image": ""
+  },
+  {
+    "id": "proyecto-7",
+    "industryId": "energia",
+    "name": "Proyecto Energía 1",
+    "description": "Descripción detallada del proyecto de energía 1...",
+    "client": "Cliente ejemplo",
+    "year": "2024",
+    "image": ""
+  },
+  {
+    "id": "proyecto-8",
+    "industryId": "energia",
+    "name": "Proyecto Energía 2",
+    "description": "Descripción detallada del proyecto de energía 2...",
+    "client": "Cliente ejemplo",
+    "year": "2023",
+    "image": ""
+  }
+]

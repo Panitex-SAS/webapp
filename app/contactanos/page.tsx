@@ -11,9 +11,9 @@ export default function ContactanosPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Información de Contacto</h2>
               <div className="space-y-2">
-                <p><strong>Email:</strong> info@panitex.com</p>
-                <p><strong>Teléfono:</strong> +XX XXX XXX XXXX</p>
-                <p><strong>Dirección:</strong> Dirección pendiente</p>
+                <p><strong>Email:</strong> rene.silva@panitex.com.co</p>
+                <p><strong>Teléfono:</strong> +57 315 852 2816</p>
+                <p><strong>Dirección:</strong> Bogotá, Colombia</p>
               </div>
             </div>
             <div className="space-y-4">
@@ -36,7 +36,7 @@ export default function ContactanosPage() {
                 />
                 <button 
                   type="submit"
-                  className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                  className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700"
                 >
                   Enviar
                 </button>

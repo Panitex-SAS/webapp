@@ -1,3 +1,4 @@
+import Link from "next/link";
 import industriesData from "@/app/data/industries.json";
 
 interface Industry {
@@ -20,13 +21,14 @@ export default function IndustriasPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             {industries.map((industry) => (
-              <div
+              <Link
                 key={industry.id}
-                className="p-6 border rounded-lg hover:shadow-lg transition-shadow"
+                href={`/industrias/${industry.id}`}
+                className="p-6 border rounded-lg hover:shadow-lg transition-shadow bg-white block cursor-pointer"
               >
-                <h2 className="text-xl font-semibold mb-3">{industry.name}</h2>
-                <p>{industry.description}</p>
-              </div>
+                <h2 className="text-xl font-semibold mb-3 text-red-600">{industry.name}</h2>
+                <p className="text-gray-600">{industry.description}</p>
+              </Link>
             ))}
           </div>
         </section>
