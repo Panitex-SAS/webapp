@@ -27,8 +27,8 @@ export default function NosotrosPage() {
             
             {/* Company History Text */}
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-800">Nuestra Historia</h2>
-              <div className="text-lg text-gray-700 space-y-4">
+              <h2 className="text-3xl font-bold">Nuestra Historia</h2>
+              <div className="text-lg space-y-4">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
