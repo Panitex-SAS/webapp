@@ -11,6 +11,7 @@ export default function ContactanosPage() {
             src="/images/home/lanchas3.jpg"
             alt="Contacto"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

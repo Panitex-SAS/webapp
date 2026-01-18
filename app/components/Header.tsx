@@ -33,6 +33,7 @@ export default function Header() {
               width={120} 
               height={60}
               className="object-contain"
+              style={{ width: 'auto', height: '60px' }}
             />
           </Link>
           
