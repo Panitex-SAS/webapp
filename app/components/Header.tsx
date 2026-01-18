@@ -19,7 +19,8 @@ export default function Header() {
 
   return (
     <header 
-      className="sticky top-0 z-50 bg-white border-b shadow-sm"
+      className="sticky top-0 z-50 border-b shadow-sm"
+      style={{ backgroundColor: 'rgb(237, 241, 237)' }}
       onMouseLeave={() => setIsIndustriesOpen(false)}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4">
@@ -170,7 +171,8 @@ export default function Header() {
       {/* Desktop Dropdown Menu */}
       {isIndustriesOpen && (
         <div 
-          className="hidden lg:block absolute left-0 right-0 top-full bg-white border-t shadow-lg"
+          className="hidden lg:block absolute left-0 right-0 top-full border-t shadow-lg"
+          style={{ backgroundColor: 'rgb(237, 241, 237)' }}
           onMouseEnter={() => setIsIndustriesOpen(true)}
         >
           <div className="max-w-7xl mx-auto px-6 py-6">

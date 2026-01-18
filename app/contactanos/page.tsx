@@ -1,13 +1,37 @@
+import Image from "next/image";
+
 export default function ContactanosPage() {
   return (
-    <main className="min-h-screen p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6">Contáctanos</h1>
-        <section className="space-y-6">
-          <p className="text-lg">
+    <main className="min-h-screen">
+      {/* Hero Section with Background Image */}
+      <section className="relative h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/home/lanchas3.jpg"
+            alt="Contacto"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-5" />
+        
+        {/* Title */}
+        <h1 className="relative z-10 text-6xl font-bold text-white drop-shadow-2xl px-8 md:pl-16">
+          Contacto
+        </h1>
+      </section>
+
+      {/* Contact Information Section */}
+      <section className="py-16 px-8 ">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-lg mb-12 text-center">
             Placeholder: Ponte en contacto con nosotros.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Información de Contacto</h2>
               <div className="space-y-2">
@@ -43,8 +67,8 @@ export default function ContactanosPage() {
               </form>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }
