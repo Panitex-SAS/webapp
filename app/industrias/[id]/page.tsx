@@ -1,23 +1,7 @@
 import Link from "next/link";
 import industriesData from "@/app/data/industries.json";
 import projectsData from "@/app/data/projects.json";
-
-interface Industry {
-  id: string;
-  name: string;
-  description: string;
-  image?: string;
-}
-
-interface Project {
-  id: string;
-  industryId: string;
-  name: string;
-  description: string;
-  client: string;
-  year: string;
-  image?: string;
-}
+import type { Industry, Project } from "@/app/types";
 
 export default async function IndustryDetailPage({
   params,

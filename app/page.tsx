@@ -2,13 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ImageCarousel from "./components/ImageCarousel";
 import industriesData from "@/app/data/industries.json";
-
-interface Industry {
-  id: string;
-  name: string;
-  description: string;
-  image?: string;
-}
+import type { Industry } from "@/app/types";
 
 export default function Home() {
   const industries = industriesData as Industry[];
@@ -22,7 +16,7 @@ export default function Home() {
         </div>
         
         {/* Gradient Overlay for Better Text Visibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-5" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/40 to-transparent z-5" />
         
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col items-start w-full px-8 md:pl-16 md:pr-8 max-w-3xl">

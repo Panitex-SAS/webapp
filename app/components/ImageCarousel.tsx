@@ -4,11 +4,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const images = [
-  "/images/home/lanchas1.jpg",
-  "/images/home/lanchas2.jpg",
-  "/images/home/lanchas3.jpg",
-  "/images/home/lanchas4.jpg",
-  "/images/home/lanchas5.jpg",
+  { src: "/images/home/lanchas1.jpg", alt: "Embarcaciones marítimas en operación" },
+  { src: "/images/home/lanchas2.jpg", alt: "Flota de embarcaciones Panitex" },
+  { src: "/images/home/lanchas3.jpg", alt: "Servicios marítimos especializados" },
+  { src: "/images/home/lanchas4.jpg", alt: "Operaciones portuarias" },
+  { src: "/images/home/lanchas5.jpg", alt: "Logística marítima" },
 ];
 
 export default function ImageCarousel() {
@@ -20,7 +20,7 @@ export default function ImageCarousel() {
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
@@ -31,18 +31,19 @@ export default function ImageCarousel() {
       {/* Images */}
       {images.map((image, index) => (
         <div
-          key={image}
+          key={image.src}
           className={`absolute inset-0 transition-opacity duration-1000 ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         >
           <Image
-            src={image}
-            alt={`Slide ${index + 1}`}
+            src={image.src}
+            alt={image.alt}
             fill
             sizes="100vw"
             className="object-cover"
             priority={index === 0}
+            loading={index === 0 ? undefined : "lazy"}
           />
         </div>
       ))}

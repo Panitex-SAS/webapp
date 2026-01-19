@@ -18,7 +18,7 @@ export default function ContactanosPage() {
         </div>
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-5" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/40 to-transparent z-5" />
         
         {/* Title */}
         <h1 className="relative z-10 text-6xl font-bold text-white drop-shadow-2xl px-8 md:pl-16">
@@ -43,25 +43,47 @@ export default function ContactanosPage() {
             </div>
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Formulario de Contacto</h2>
-              <form className="space-y-4">
-                <input 
-                  type="text" 
-                  placeholder="Nombre" 
-                  className="w-full p-2 border rounded"
-                />
-                <input 
-                  type="email" 
-                  placeholder="Email" 
-                  className="w-full p-2 border rounded"
-                />
-                <textarea 
-                  placeholder="Mensaje" 
-                  rows={4}
-                  className="w-full p-2 border rounded"
-                />
+              <form className="space-y-4" aria-label="Formulario de contacto">
+                <div>
+                  <label htmlFor="contact-name" className="block text-sm font-medium mb-1">
+                    Nombre
+                  </label>
+                  <input 
+                    id="contact-name"
+                    type="text" 
+                    placeholder="Nombre" 
+                    className="w-full p-2 border rounded"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="contact-email" className="block text-sm font-medium mb-1">
+                    Email
+                  </label>
+                  <input 
+                    id="contact-email"
+                    type="email" 
+                    placeholder="Email" 
+                    className="w-full p-2 border rounded"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="contact-message" className="block text-sm font-medium mb-1">
+                    Mensaje
+                  </label>
+                  <textarea 
+                    id="contact-message"
+                    placeholder="Mensaje" 
+                    rows={4}
+                    className="w-full p-2 border rounded"
+                    required
+                  />
+                </div>
                 <button 
                   type="submit"
                   className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                  aria-label="Enviar formulario de contacto"
                 >
                   Enviar
                 </button>

@@ -2,26 +2,28 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import industriesData from "@/app/data/industries.json";
-
-interface Industry {
-  id: string;
-  name: string;
-  description: string;
-  image?: string;
-}
+import type { Industry } from "@/app/types";
 
 export default function Header() {
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const industries = industriesData as Industry[];
 
+  // Debounced handlers to prevent excessive re-renders
+  const handleMouseEnter = useCallback(() => {
+    setIsIndustriesOpen(true);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setIsIndustriesOpen(false);
+  }, []);
+
   return (
     <header 
-      className="sticky top-0 z-50 border-b shadow-sm"
-      style={{ backgroundColor: 'rgb(237, 241, 237)' }}
-      onMouseLeave={() => setIsIndustriesOpen(false)}
+      className="sticky top-0 z-50 border-b shadow-sm bg-[rgb(237,241,237)]"
+      onMouseLeave={handleMouseLeave}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -57,10 +59,12 @@ export default function Header() {
             </li>
             <li 
               className="relative"
-              onMouseEnter={() => setIsIndustriesOpen(true)}
+              onMouseEnter={handleMouseEnter}
             >
               <button 
                 className="text-gray-700 hover:text-red-600 transition-colors font-medium flex items-center"
+                aria-expanded={isIndustriesOpen}
+                aria-haspopup="true"
               >
                 Industrias
                 <svg 
@@ -84,7 +88,7 @@ export default function Header() {
           </ul>
           
           {/* Spacer to balance the logo - Desktop only */}
-          <div className="hidden lg:block w-[120px]"></div>
+          <div className="hidden lg:block w-30"></div>
           
           {/* Hamburger Menu Button - Mobile only */}
           <button
@@ -172,9 +176,8 @@ export default function Header() {
       {/* Desktop Dropdown Menu */}
       {isIndustriesOpen && (
         <div 
-          className="hidden lg:block absolute left-0 right-0 top-full border-t shadow-lg"
-          style={{ backgroundColor: 'rgb(237, 241, 237)' }}
-          onMouseEnter={() => setIsIndustriesOpen(true)}
+          className="hidden lg:block absolute left-0 right-0 top-full border-t shadow-lg bg-[rgb(237,241,237)]"
+          onMouseEnter={handleMouseEnter}
         >
           <div className="max-w-7xl mx-auto px-6 py-6">
             <div className="flex justify-center gap-8 flex-wrap">

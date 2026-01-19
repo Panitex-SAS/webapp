@@ -15,7 +15,7 @@ export default function NosotrosPage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Founder Image */}
-            <div className="relative w-full h-[500px] rounded-lg overflow-hidden shadow-xl">
+            <div className="relative w-full h-125 rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/images/founders.png"
                 alt="Fundadores de Panitex"
