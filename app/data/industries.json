@@ -1,26 +1,38 @@
 [
   {
-    "id": "maritimo",
-    "name": "Marítimo",
-    "description": "Soluciones especializadas para el sector marítimo",
+    "id": "Transporte-marítimo-y-fluvial",
+    "name": "Transporte-marítimo-y-fluvial",
+    "description": "Soluciones marítimas y fluviales para territorios de difícil acceso",
     "image": "/images/maritimo.jpeg"
   },
   {
-    "id": "construccion",
-    "name": "Construcción",
-    "description": "Servicios integrales para proyectos de construcción",
+    "id": "Blindaje arquitectónico",
+    "name": "Blindaje arquitectónico",
+    "description": "Infraestructura y blindaje para entornos de riesgo institucional",
     "image": "/images/construccion.jpeg"
   },
   {
-    "id": "mineria",
-    "name": "Minería",
-    "description": "Experiencia en operaciones mineras y logística",
+    "id": "Radiocomunicaciones",
+    "name": "Radiocomunicaciones",
+    "description": "Conectividad operativa mediante sistemas de radiocomunicación",
     "image": "/images/mineria.jpeg"
   },
   {
-    "id": "energia",
-    "name": "Energía",
-    "description": "Proyectos en el sector energético y renovables",
+    "id": "Equipos de buceo y comunicación subacuática",
+    "name": "Equipos de buceo y comunicación subacuática",
+    "description": "Equipos de buceo y comunicación para operaciones subacuáticas",
     "image": "/images/energia.jpeg"
+  },
+  {
+    "id": "Adulto mayor",
+    "name": "Adulto mayor",
+    "description": "Dotaciones y asistencia básica para población adulta mayor",
+    "image": "/images/energia.jpeg"
+  },
+  {
+    "id": "Dotaciones especializadas",
+    "name": "Dotaciones espcializadas",
+    "description": "Dotaciones técnicas para entidades y comunidades",
+    "image": "/images/construccion.jpeg"
   }
 ]
