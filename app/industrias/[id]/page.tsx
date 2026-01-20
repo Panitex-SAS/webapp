@@ -2,6 +2,7 @@ import Link from "next/link";
 import industriesData from "@/app/data/industries.json";
 import projectsData from "@/app/data/projects.json";
 import type { Industry, Project } from "@/app/types";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export default async function IndustryDetailPage({
   params,
@@ -20,6 +21,10 @@ export default async function IndustryDetailPage({
   if (!industry) {
     return (
       <main className="min-h-screen p-8">
+        <Breadcrumb items={[
+          { label: "Inicio", href: "/" },
+          { label: "Industria no encontrada" }
+        ]} />
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-6">Industria no encontrada</h1>
           <Link
@@ -35,6 +40,10 @@ export default async function IndustryDetailPage({
 
   return (
     <main className="min-h-screen p-8">
+      <Breadcrumb items={[
+        { label: "Inicio", href: "/" },
+        { label: industry.name }
+      ]} />
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold mb-4">{industry.name}</h1>
         <p className="text-lg text-gray-600 mb-8">{industry.description}</p>

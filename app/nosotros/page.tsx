@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Breadcrumb from "../components/Breadcrumb";
 
 export default function NosotrosPage() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
   return (
     <main className="min-h-screen">
+      <Breadcrumb items={[
+        { label: "Inicio", href: "/" },
+        { label: "Nosotros" }
+      ]} />
+      
       {/* Company History Section */}
       <section className="py-16 px-8">
         <div className="max-w-6xl mx-auto">

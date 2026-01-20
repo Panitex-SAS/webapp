@@ -1,8 +1,14 @@
 import Image from "next/image";
+import Breadcrumb from "../components/Breadcrumb";
 
 export default function ContactanosPage() {
   return (
     <main className="min-h-screen">
+      <Breadcrumb items={[
+        { label: "Inicio", href: "/" },
+        { label: "Contáctanos" }
+      ]} />
+      
       {/* Hero Section with Background Image */}
       <section className="relative h-[60vh] flex items-center">
         {/* Background Image */}

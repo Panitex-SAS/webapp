@@ -43,6 +43,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Panitex Section */}
+      <section className="py-16 px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-red-600 mb-4">
+            ¿Por qué Panitex?
+          </h2>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6">
+            Ejecutamos con excelencia.
+          </h3>
+          <p className="text-lg md:text-xl leading-relaxed mb-6">
+            Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.
+          </p>
+          <Link
+            href="/nosotros"
+            className="inline-flex items-center text-red-600 hover:underline transition-all"
+          >
+            Aprende de nuestro propósito y valores
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
       {/* Industries Section */}
       <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
