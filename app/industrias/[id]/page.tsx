@@ -64,12 +64,26 @@ export default async function IndustryDetailPage({
                 <h3 className="text-xl font-semibold mb-3">{project.name}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="space-y-1 text-sm text-gray-500">
-                  <p>
-                    <strong>Cliente:</strong> {project.client}
-                  </p>
+                  {project.client && (
+                    <p>
+                      <strong>Cliente:</strong> {project.client}
+                    </p>
+                  )}
                   <p>
                     <strong>Año:</strong> {project.year}
                   </p>
+                  {project.sourceUrl && (
+                    <p>
+                      <a
+                        href={project.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-red-600 hover:underline"
+                      >
+                        Ver en SECOP →
+                      </a>
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

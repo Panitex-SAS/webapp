@@ -12,7 +12,8 @@ export interface Project {
   name: string;
   industryId: string;
   description: string;
-  client?: string;
-  year?: string | number;
-  image?: string;
+  client: string | null;
+  year: string;
+  image: string;
+  sourceUrl: string | null;
 }
