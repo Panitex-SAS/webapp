@@ -61,12 +61,13 @@ export default function Header() {
               className="relative"
               onMouseEnter={handleMouseEnter}
             >
-              <button 
+              <Link
+                href="/industrias" 
                 className="text-gray-700 hover:text-red-600 transition-colors font-medium flex items-center"
                 aria-expanded={isIndustriesOpen}
                 aria-haspopup="true"
               >
-                Industrias
+                Sistemas de Desarrollo Social
                 <svg 
                   className={`w-4 h-4 ml-1 transition-transform ${isIndustriesOpen ? 'rotate-180' : ''}`}
                   fill="none" 
@@ -75,7 +76,7 @@ export default function Header() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
+              </Link>
             </li>
             <li>
               <Link 
@@ -144,7 +145,13 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <div className="text-gray-700 font-medium mb-2">Industrias</div>
+                <Link
+                  href="/industrias"
+                  className="block text-gray-700 hover:text-red-600 transition-colors font-medium mb-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Sistemas de Desarrollo Social
+                </Link>
                 <ul className="ml-4 flex flex-col gap-2">
                   {industries.map((industry) => (
                     <li key={industry.id}>

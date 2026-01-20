@@ -71,13 +71,13 @@ export default function Home() {
       <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
-            Industrias
+            Sistemas de Desarrollo Social
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {industries.map((industry) => (
               <div 
                 key={industry.id} 
-                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-2xl transition-all duration-700 hover:z-50"
               >
                 {/* Industry Image */}
                 {industry.image && (
@@ -97,13 +97,13 @@ export default function Home() {
                 </h3>
                 
                 {/* Hidden content that appears on hover */}
-                <div className="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out overflow-hidden">
-                  <p className="text-gray-600 mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-in-out overflow-hidden">
+                  <p className="text-gray-600 mb-4">
                     {industry.description}
                   </p>
                   <Link
                     href={`/industrias/${industry.id}`}
-                    className="text-red-600 hover:text-red-700 font-medium inline-flex items-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 delay-100"
+                    className="text-red-600 hover:text-red-700 hover:underline font-medium inline-flex items-center"
                   >
                     Ver proyectos
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

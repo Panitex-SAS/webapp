@@ -13,5 +13,6 @@ export interface Project {
   industryId: string;
   description: string;
   client?: string;
-  year?: number;
+  year?: string | number;
+  image?: string;
 }

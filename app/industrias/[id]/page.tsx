@@ -42,6 +42,7 @@ export default async function IndustryDetailPage({
     <main className="min-h-screen p-8">
       <Breadcrumb items={[
         { label: "Inicio", href: "/" },
+        { label: "Sistemas de Desarrollo Social", href: "/industrias" },
         { label: industry.name }
       ]} />
       <div className="max-w-6xl mx-auto">
