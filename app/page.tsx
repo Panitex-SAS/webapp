@@ -47,7 +47,7 @@ export default function Home() {
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-red-600 mb-4">
-            ¿Por qué Panitex?
+            ¿Por qué trabajar con Panitex?
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold mb-6">
             Ejecutamos con excelencia.
