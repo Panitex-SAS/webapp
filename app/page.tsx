@@ -21,23 +21,23 @@ export default function Home() {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col items-start w-full px-8 md:pl-16 md:pr-8 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
-            La infraestructura pública es una responsabilidad social
+            Bienvenido a Panitex
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl text-white drop-shadow-lg">
-            Placeholder
+            Placeholder: Descripción principal de la empresa
           </p>
           <div className="flex gap-4 flex-wrap">
             <Link
               href="/nosotros"
               className="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors shadow-lg"
             >
-              Conoce más sobre nosotros
+              Conoce más sobre nosotros
             </Link>
             <Link
               href="/contactanos"
               className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-red-600 transition-colors shadow-lg"
             >
-              Contáctanos
+              Contáctanos
             </Link>
           </div>
         </div>
@@ -47,19 +47,19 @@ export default function Home() {
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-red-600 mb-4">
-            ¿Por qué trabajar con Panitex?
+            ¿Por qué Panitex?
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold mb-6">
             Ejecutamos con excelencia.
           </h3>
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.
+            Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.
           </p>
           <Link
             href="/nosotros"
             className="inline-flex items-center text-red-600 hover:underline transition-all"
           >
-            Aprende de nuestro propósito y valores
+            Aprende de nuestro propósito y valores
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* Industries Section */}
-      <section className="py-16 px-8 bg-gray-50">
+      <section className="py-16 px-8 bg-gray-50 relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
             Sistemas de Desarrollo Social
@@ -77,7 +77,7 @@ export default function Home() {
             {industries.map((industry) => (
               <div 
                 key={industry.id} 
-                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-2xl transition-all duration-700 hover:z-50"
+                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-2xl transition-all duration-700"
               >
                 {/* Industry Image */}
                 {industry.image && (
