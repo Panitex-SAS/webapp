@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header 
-      className="sticky top-0 z-50 border-b shadow-sm bg-[rgb(237,241,237)]"
+      className="sticky top-0 z-50 border-b shadow-sm bg-[rgb(255,255,255)]"
       onMouseLeave={handleMouseLeave}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4">
@@ -44,7 +44,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/" 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+                className="text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
               >
                 Inicio
               </Link>
@@ -52,7 +52,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/nosotros" 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+                className="text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
               >
                 Nosotros
               </Link>
@@ -63,7 +63,7 @@ export default function Header() {
             >
               <Link
                 href="/industrias" 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium flex items-center"
+                className="text-lg text-gray-700 hover:text-red-600 transition-colors font-medium flex items-center"
                 aria-expanded={isIndustriesOpen}
                 aria-haspopup="true"
               >
@@ -81,7 +81,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/contactanos" 
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium"
+                className="text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
               >
                 Contáctanos
               </Link>
@@ -129,7 +129,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/" 
-                  className="block text-gray-700 hover:text-red-600 transition-colors font-medium"
+                  className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Inicio
@@ -138,7 +138,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/nosotros" 
-                  className="block text-gray-700 hover:text-red-600 transition-colors font-medium"
+                  className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Nosotros
@@ -147,7 +147,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/industrias"
-                  className="block text-gray-700 hover:text-red-600 transition-colors font-medium mb-2"
+                  className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium mb-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Sistemas de Desarrollo Social
@@ -169,7 +169,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/contactanos" 
-                  className="block text-gray-700 hover:text-red-600 transition-colors font-medium"
+                  className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contáctanos
@@ -187,15 +187,19 @@ export default function Header() {
           onMouseEnter={handleMouseEnter}
         >
           <div className="max-w-7xl mx-auto px-6 py-6">
-            <div className="flex justify-center gap-8 flex-wrap">
-              {industries.map((industry) => (
-                <Link
-                  key={industry.id}
-                  href={`/industrias/${industry.id}`}
-                  className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg"
-                >
-                  {industry.name}
-                </Link>
+            <div className="flex justify-center items-center gap-4 flex-wrap">
+              {industries.map((industry, index) => (
+                <div key={industry.id} className="flex items-center">
+                  <Link
+                    href={`/industrias/${industry.id}`}
+                    className="text-gray-700 hover:text-red-600 transition-colors font-medium text-base"
+                  >
+                    {industry.name}
+                  </Link>
+                  {index < industries.length - 1 && (
+                    <span className="text-gray-300 mx-4">|</span>
+                  )}
+                </div>
               ))}
             </div>
           </div>

@@ -33,16 +33,19 @@ export default function NosotrosPage() {
             
             {/* Company History Text */}
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Nuestra Historia</h2>
+              <h2 className="text-3xl font-bold">Nuestro CEO</h2>
               <div className="text-lg space-y-4">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                <p> 
+                  Panitex S.A.S se origina en la experiencia de su CEO, con más de 20 años liderando contratos públicos de alta complejidad técnica y logística en Colombia, respaldado por una sólida formación en la industria textil y conocimiento integral de la cadena productiva.
+                </p> 
+                <p> 
+                  En sus inicios, la empresa ejecutó contratos de blindaje vehicular y chalecos antibalas, fortaleciendo capacidades en cumplimiento técnico, control de calidad y logística especializada, lo que permitió su expansión hacia dotaciones especializadas para la Policía Nacional y comunidades indígenas en coordinación con la UNP. 
+                </p> 
+                <p> 
+                  Actualmente, Panitex concentra uno de sus principales enfoques en la ejecución de soluciones de transporte marítimo y fluvial para comunidades indígenas remotas, garantizando conectividad, acceso a bienes esenciales y presencia institucional en territorios de difícil acceso. 
+                </p> 
+                <p> 
+                  De manera complementaria, la compañía desarrolla proyectos de blindaje arquitectónico y dotaciones especializadas, consolidándose hoy como un proveedor integral de soluciones de movilidad, protección y dotación especializada, con amplio conocimiento del territorio colombiano. 
                 </p>
               </div>
             </div>
