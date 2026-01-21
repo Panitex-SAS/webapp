@@ -7,7 +7,7 @@
   },
   {
     "id": "blindaje_arquitectonico",
-    "name": "Blindaje arquitectónico",
+    "name": "Blindaje Arquitectónico",
     "description": "Infraestructura y blindaje para entornos de riesgo institucional",
     "image": "/images/construccion.jpeg"
   },
@@ -19,19 +19,19 @@
   },
   {
     "id": "equipos_de_buceo",
-    "name": "Equipos de buceo y comunicación subacuática",
+    "name": "Equipos de Buceo y Comunicación Subacuática",
     "description": "Equipos de buceo y comunicación para operaciones subacuáticas",
     "image": "/images/energia.jpeg"
   },
   {
     "id": "adulto_mayor",
-    "name": "Adulto mayor",
+    "name": "Adulto Mayor",
     "description": "Dotaciones y asistencia básica para población adulta mayor",
     "image": "/images/energia.jpeg"
   },
   {
     "id": "dotaciones-especializadas",
-    "name": "Dotaciones especializadas",
+    "name": "Dotaciones Especializadas",
     "description": "Dotaciones técnicas para entidades y comunidades",
     "image": "/images/construccion.jpeg"
   }
