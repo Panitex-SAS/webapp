@@ -20,14 +20,24 @@ export default function ImageCarousel() {
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
+  const goToPrevious = () => {
+    console.log("Previous clicked");
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const goToNext = () => {
+    console.log("Next clicked");
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden group">
       {/* Images */}
       {images.map((image, index) => (
         <div
@@ -49,15 +59,37 @@ export default function ImageCarousel() {
       ))}
 
       {/* Overlay gradient for better text readability */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+
+      {/* Previous Button */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-[100] bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all shadow-lg pointer-events-auto"
+        aria-label="Previous image"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      {/* Next Button */}
+      <button
+        onClick={goToNext}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-[100] bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all shadow-lg pointer-events-auto"
+        aria-label="Next image"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-[100]">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-3 h-3 rounded-full transition-colors pointer-events-auto ${
               index === currentIndex
                 ? "bg-white"
                 : "bg-white/50 hover:bg-white/75"

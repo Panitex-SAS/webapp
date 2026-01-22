@@ -16,10 +16,10 @@ export default function Home() {
         </div>
         
         {/* Gradient Overlay for Better Text Visibility */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/40 to-transparent z-5" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/40 to-transparent z-5 pointer-events-none" />
         
         {/* Content Overlay */}
-        <div className="relative z-10 flex flex-col items-start w-full px-8 md:pl-16 md:pr-8 max-w-3xl">
+        <div className="relative z-10 flex flex-col items-start w-full px-8 md:pl-16 md:pr-8 max-w-3xl pointer-events-none">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
             La infraestructura pública es una responsabilidad social
           </h1>
@@ -29,13 +29,13 @@ export default function Home() {
           <div className="flex gap-4 flex-wrap">
             <Link
               href="/industrias"
-              className="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors shadow-lg"
+              className="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors shadow-lg pointer-events-auto"
             >
               Nuestros proyectos
             </Link>
             <Link
               href="/contactanos"
-              className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-red-600 transition-colors shadow-lg"
+              className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-red-600 transition-colors shadow-lg pointer-events-auto"
             >
               Contáctanos
             </Link>
