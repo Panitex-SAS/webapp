@@ -27,12 +27,10 @@ export default function ImageCarousel() {
   };
 
   const goToPrevious = () => {
-    console.log("Previous clicked");
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   const goToNext = () => {
-    console.log("Next clicked");
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 

@@ -100,7 +100,7 @@ export default async function IndustryDetailPage({
               <h2 className="text-2xl font-bold mb-6">Proyectos</h2>
               {industryProjects.length === 0 ? (
                 <p className="text-gray-600 text-sm">
-                  No hay proyectos disponibles para esta industria.
+                  Proyectos en ejecución, vuelve pronto.
                 </p>
               ) : (
                 <div className="space-y-4">
