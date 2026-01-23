@@ -92,7 +92,7 @@ export default function ContactanosPage() {
         setSubmitStatus('error');
         setStatusMessage(data.error || 'Error al enviar el mensaje. Por favor intenta de nuevo.');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setStatusMessage('Error al enviar el mensaje. Por favor intenta de nuevo.');
     } finally {

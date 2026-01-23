@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
     const sanitizedMessage = sanitizeHtml(message.trim());
 
     // Send email using Resend
-    const data = await resend.emails.send({
+    await resend.emails.send({
       from: 'Contacto Panitex <onboarding@resend.dev>',
       to: ['nicolas.silva@panitex.com.co', 'rene.silva@panitex.com.co'],
       subject: `Nuevo mensaje de contacto de ${sanitizedName}`,
