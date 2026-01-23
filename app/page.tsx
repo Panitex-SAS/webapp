@@ -43,6 +43,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Alcance Territorial Section */}
+      <section className="py-16 px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Image Section - Left */}
+            <div className="w-full lg:w-1/2">
+              <h2 className="text-4xl font-bold text-red-600 mb-3">Alcance Territorial</h2>
+              <h3 className="text-2xl font-semibold text-gray-700 mb-6">Impacto en comunidades indígenas</h3>
+              <div className="relative w-full h-125 rounded-lg overflow-hidden shadow-xl mb-6">
+                <Image
+                  src="/images/home/AlcanceTerritorialPanitex.png"
+                  alt="Alcance Territorial Panitex"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-lg text-red-600 leading-relaxed">
+                <b>Panitex</b> ha implementado en <b><i>127 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>166 embarcaciones</b>, <b>221 motores</b> y más de <b>8300 accesorios</b>.
+              </p>
+            </div>
+
+            {/* KPIs Section - Right */}
+            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+              <div className="space-y-12">
+                {/* KPI 1 */}
+                <div className="text-center lg:text-left">
+                  <div className="text-6xl md:text-7xl font-bold text-red-600 mb-3">127</div>
+                  <p className="text-xl text-gray-700">Comunidades Indígenas Alcanzadas</p>
+                </div>
+
+                {/* Separator */}
+                <div className="h-px bg-gray-300"></div>
+
+                {/* KPI 2 */}
+                <div className="text-center lg:text-left">
+                  <div className="text-6xl md:text-7xl font-bold text-red-600 mb-3">60</div>
+                  <p className="text-xl text-gray-700">Contratos Públicos Ejecutados</p>
+                </div>
+
+                {/* Separator */}
+                <div className="h-px bg-gray-300"></div>
+
+                {/* KPI 3 */}
+                <div className="text-center lg:text-left">
+                  <div className="text-6xl md:text-7xl font-bold text-red-600 mb-3">13,000</div>
+                  <p className="text-xl text-gray-700">Elementos de Dotaciones Especializadas Entregadas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Panitex Section */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
