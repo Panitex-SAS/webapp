@@ -147,7 +147,7 @@ export default function Home() {
                 <Image src="/images/home/UNP.png" alt="UNP" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
               </div>
               <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
-                <Image src="/images/home/gobPutumayo.png" alt="Gobierno de Putumayo" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+                <Image src="/images/home/GobPutumayo.png" alt="Gobierno de Putumayo" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
               </div>
               
               {/* Duplicate set for seamless loop */}
@@ -170,7 +170,7 @@ export default function Home() {
                 <Image src="/images/home/UNP.png" alt="UNP" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
               </div>
               <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
-                <Image src="/images/home/gobPutumayo.png" alt="Gobierno de Putumayo" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+                <Image src="/images/home/GobPutumayo.png" alt="Gobierno de Putumayo" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
               </div>
             </div>
           </div>

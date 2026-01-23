@@ -121,7 +121,7 @@ export default function ContactanosPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/home/lanchas3.jpg"
+            src="/images/home/carousel/lanchas3.jpg"
             alt="Contacto"
             fill
             sizes="100vw"
