@@ -82,7 +82,7 @@ export default async function IndustryDetailPage({
 
           {/* Industry Image - Full Width of Right Side */}
           {industry.image && (
-            <div className="relative w-full h-80 mb-8 rounded-lg overflow-hidden">
+            <div className="relative w-full h-125 mb-8 rounded-lg overflow-hidden">
               <Image
                 src={industry.image}
                 alt={industry.name}

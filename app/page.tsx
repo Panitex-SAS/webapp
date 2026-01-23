@@ -129,11 +129,11 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
             Sistemas de Desarrollo Social
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {industries.map((industry) => (
               <div 
                 key={industry.id} 
-                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-2xl transition-all duration-700"
+                className="group relative p-6 bg-white hover:bg-red-50 rounded-lg shadow-md hover:shadow-2xl transition-all duration-700 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] xl:w-[calc(25%-1.5rem)]"
               >
                 {/* Industry Image */}
                 {industry.image && (
