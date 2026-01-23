@@ -53,7 +53,7 @@ export default function Home() {
               <h3 className="text-2xl font-semibold text-gray-700 mb-6">Impacto en comunidades indígenas</h3>
               <div className="relative w-full h-125 rounded-lg overflow-hidden shadow-xl mb-6">
                 <Image
-                  src="/images/home/AlcanceTerritorialPanitex.png"
+                  src="/images/home/alcan_terr.png"
                   alt="Alcance Territorial Panitex"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
