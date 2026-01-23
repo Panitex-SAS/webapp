@@ -57,13 +57,69 @@ export default function Home() {
           </p>
           <Link
             href="/nosotros"
-            className="inline-flex items-center text-red-600 hover:underline transition-all"
-          >
+            className="inline-flex items-center text-red-600 hover:underline transition-all">
             Aprende de nuestro propósito y valores
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
+          <h3 className="text-2xl md:text-2xl font-bold italic mt-10 mb-6">
+            Aliado confiable del Sector Público
+          </h3>
+          
+          {/* Scrolling Logos */}
+          <div className="mt-8 overflow-hidden relative">
+            {/* Background bar */}
+            <div className="absolute inset-0 bg-white rounded-lg"></div>
+            
+            <div className="flex animate-scroll-logos gap-12 items-center py-8 relative z-10">
+              {/* First set of logos */}
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/CENAC.png" alt="CENAC" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/COPES.png" alt="COPES" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/ESGJQ.png" alt="ESGJQ" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/FRP.png" alt="FRP" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/SGC.png" alt="SGC" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/UNP.png" alt="UNP" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/gobPutumayo.png" alt="Gobierno de Putumayo" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/CENAC.png" alt="CENAC" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/COPES.png" alt="COPES" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/ESGJQ.png" alt="ESGJQ" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/FRP.png" alt="FRP" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/SGC.png" alt="SGC" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/UNP.png" alt="UNP" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+              <div className="w-37.5 h-25 flex items-center justify-center bg-transparent">
+                <Image src="/images/home/gobPutumayo.png" alt="Gobierno de Putumayo" width={150} height={0} className="max-w-full max-h-full object-contain" style={{ width: 'auto', height: 'auto' }} unoptimized />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

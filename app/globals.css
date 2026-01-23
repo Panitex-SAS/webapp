@@ -21,3 +21,18 @@ body {
 a:hover {
   text-decoration: underline;
 }
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-logos {
+  animation: scroll-logos 30s linear infinite;
+  display: flex;
+  width: max-content;
+}

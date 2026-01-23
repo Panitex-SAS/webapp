@@ -4,11 +4,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const images = [
-  { src: "/images/home/lanchas1.jpg", alt: "Embarcaciones marítimas en operación" },
-  { src: "/images/home/lanchas2.jpg", alt: "Flota de embarcaciones Panitex" },
-  { src: "/images/home/lanchas3.jpg", alt: "Servicios marítimos especializados" },
-  { src: "/images/home/lanchas4.jpg", alt: "Operaciones portuarias" },
-  { src: "/images/home/lanchas5.jpg", alt: "Logística marítima" },
+  { src: "/images/home/carousel/lanchas1.jpg", alt: "Embarcaciones marítimas en operación" },
+  { src: "/images/home/carousel/lanchas2.jpg", alt: "Flota de embarcaciones Panitex" },
+  { src: "/images/home/carousel/lanchas3.jpg", alt: "Servicios marítimos especializados" },
+  { src: "/images/home/carousel/lanchas4.jpg", alt: "Operaciones portuarias" },
+  { src: "/images/home/carousel/lanchas5.jpg", alt: "Logística marítima" },
 ];
 
 export default function ImageCarousel() {
@@ -64,7 +64,7 @@ export default function ImageCarousel() {
       {/* Previous Button */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-[100] bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all shadow-lg pointer-events-auto"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-100 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all shadow-lg pointer-events-auto"
         aria-label="Previous image"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@ export default function ImageCarousel() {
       {/* Next Button */}
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-[100] bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all shadow-lg pointer-events-auto"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-100 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all shadow-lg pointer-events-auto"
         aria-label="Next image"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ export default function ImageCarousel() {
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-[100]">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-100">
         {images.map((_, index) => (
           <button
             key={index}
