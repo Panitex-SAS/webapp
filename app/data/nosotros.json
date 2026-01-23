@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ceo",
+    "name": "Nuestro CEO",
+    "image": "/images/nosotros/rene_silva.png"
+  },
+  {
+    "id": "historia",
+    "name": "Nuestra Historia",
+    "image": "/images/nosotros/historia.jpg"
+  },
+  {
+    "id": "proposito-valores",
+    "name": "Nuestro Propósito y Valores",
+    "image": "/images/nosotros/valores.jpg"
+  }
+]
