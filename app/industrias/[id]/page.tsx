@@ -141,7 +141,7 @@ export default async function IndustryDetailPage({
 
             {/* Right Section - 30% of Full Page (43% of 70%) */}
             <div className="flex-2">
-              <h2 className="text-2xl font-bold mb-4">Valores Organizacionales</h2>
+              <h2 className="text-2xl font-bold mb-4">Sobre Panitex</h2>
               <div className="text-sm text-gray-600 space-y-3">
                 <h3 className="font-semibold text-base text-gray-800 mb-1">
                   Responsabilidad social en Panitex</h3>
