@@ -1,38 +1,38 @@
 [
   {
-    "id": "transporte-maritimo-y-fluvial",
+    "id": "transporte_maritimo_y_fluvial",
     "name": "Transporte Marítimo y Fluvial",
-    "description": "Soluciones marítimas y fluviales para territorios de difícil acceso",
-    "image": "/images/maritimo.jpeg"
+    "description": "Soluciones marítimas y fluviales para territorios de difícil acceso.",
+    "image": "/images/industrias/transporte_maritimo_y_fluvial.jpg"
   },
   {
     "id": "blindaje_arquitectonico",
     "name": "Blindaje Arquitectónico",
-    "description": "Infraestructura y blindaje para entornos de riesgo institucional",
-    "image": "/images/construccion.jpeg"
+    "description": "Infraestructura y blindaje para entornos de riesgo institucional.",
+    "image": "/images/industrias/blindaje_arquitectonico.png"
   },
   {
     "id": "radio_coms",
     "name": "Radiocomunicaciones",
-    "description": "Conectividad operativa mediante sistemas de radiocomunicación",
-    "image": "/images/mineria.jpeg"
+    "description": "Conectividad operativa mediante sistemas de radiocomunicación.",
+    "image": "/images/industrias/radio_coms.png"
   },
   {
     "id": "equipos_de_buceo",
     "name": "Equipos de Buceo y Comunicación Subacuática",
-    "description": "Equipos de buceo y comunicación para operaciones subacuáticas",
-    "image": "/images/energia.jpeg"
+    "description": "Equipos de buceo y comunicación para operaciones subacuáticas.",
+    "image": "/images/industrias/equipos_de_buceo.png"
   },
   {
     "id": "adulto_mayor",
     "name": "Adulto Mayor",
-    "description": "Dotaciones y asistencia básica para población adulta mayor",
-    "image": "/images/energia.jpeg"
+    "description": "Dotaciones y asistencia básica para población adulta mayor.",
+    "image": "/images/industrias/adulto_mayor.jpg"
   },
   {
-    "id": "dotaciones-especializadas",
+    "id": "dotaciones_especializadas",
     "name": "Dotaciones Especializadas",
-    "description": "Dotaciones técnicas para entidades y comunidades",
-    "image": "/images/construccion.jpeg"
+    "description": "Dotaciones técnicas para entidades y comunidades.",
+    "image": "/images/industrias/dotaciones_especializadas.jpg"
   }
 ]

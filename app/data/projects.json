@@ -1,7 +1,7 @@
 [
   {
     "id": "Transporte-marítimo-contrato-1044-2022",
-    "industryId": "transporte-maritimo-y-fluvial",
+    "industryId": "transporte_maritimo_y_fluvial",
     "name": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1044 de 2022",
     "description": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
     "client": "Unidad Nacional de Protección (UNP)",
@@ -10,7 +10,7 @@
   },
   {
     "id": "Transporte-marítimo-contrato-1045-2020",
-    "industryId": "transporte-maritimo-y-fluvial",
+    "industryId": "transporte_maritimo_y_fluvial",
     "name": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1045 de 2020",
     "description": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
     "client": null,
@@ -19,7 +19,7 @@
   },
   {
     "id": "Transporte-marítimo-contrato-1096-2020",
-    "industryId": "transporte-maritimo-y-fluvial",
+    "industryId": "transporte_maritimo_y_fluvial",
     "name": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1096 de 2020",
     "description": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
     "client": null,
@@ -28,7 +28,7 @@
   },
   {
     "id": "Transporte-marítimo-contrato-1411-2022",
-    "industryId": "transporte-maritimo-y-fluvial",
+    "industryId": "transporte_maritimo_y_fluvial",
     "name": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1411 de 2022 (Ejecutado en UT)",
     "description": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales. Ejecutado en UT.",
     "client": null,
@@ -37,7 +37,7 @@
   },
   {
     "id": "Transporte-marítimo-contrato-2078-2024",
-    "industryId": "transporte-maritimo-y-fluvial",
+    "industryId": "transporte_maritimo_y_fluvial",
     "name": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 2078 de 2024 (Ejecutado en UT)",
     "description": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales. Ejecutado en UT.",
     "client": null,
@@ -46,7 +46,7 @@
   },
   {
     "id": "Transporte-marítimo-contrato-962-2019",
-    "industryId": "transporte-maritimo-y-fluvial",
+    "industryId": "transporte_maritimo_y_fluvial",
     "name": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 962 de 2019",
     "description": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
     "client": null,
