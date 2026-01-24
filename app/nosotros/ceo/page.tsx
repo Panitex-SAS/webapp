@@ -21,8 +21,8 @@ export default function CEOPage() {
       
       {/* Main Layout: 20% Left Menu + 80% Content */}
       <div className="flex">
-        {/* Left Sidebar - 20% - Nosotros Menu */}
-        <aside className="w-[20%] p-6 bg-white min-h-screen">
+        {/* Left Sidebar - 20% - Nosotros Menu - Hidden on Mobile */}
+        <aside className="hidden md:block md:w-[20%] p-6 bg-white min-h-screen">
           <h2 className="text-lg font-bold mb-4 text-red-600">Nosotros</h2>
           <nav>
             <ul className="space-y-1 pl-4">
@@ -44,8 +44,8 @@ export default function CEOPage() {
           </nav>
         </aside>
 
-        {/* Right Content - 80% */}
-        <div className="w-[80%] p-8">
+        {/* Right Content - 80% on desktop, 100% on mobile */}
+        <div className="w-full md:w-[80%] p-4 md:p-8">
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-6">Nuestro CEO</h1>
@@ -61,13 +61,13 @@ export default function CEOPage() {
             </div>
 
             {/* Horizontal Photo */}
-            <div className="relative w-full h-125 rounded-lg overflow-hidden shadow-xl">
+            <div className="relative w-full h-64 md:h-125 shadow-xl">
               <Image
                 src="/images/nosotros/rene_silva.png"
                 alt="René Silva - CEO de Panitex"
                 fill
-                sizes="80vw"
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 80vw"
+                className="object-cover rounded-lg"
                 style={{ objectPosition: 'center calc(50% + 20px)' }}
               />
             </div>
