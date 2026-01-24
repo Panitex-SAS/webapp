@@ -49,8 +49,8 @@ export default async function IndustryDetailPage({
       
       {/* Main Layout: 20% Left Menu + 80% Content */}
       <div className="flex">
-        {/* Left Sidebar - 20% - Industries Menu */}
-        <aside className="w-[20%] p-6 bg-gray-50 min-h-screen">
+        {/* Left Sidebar - 20% - Industries Menu - Hidden on Mobile */}
+        <aside className="hidden md:block md:w-[20%] p-6 bg-gray-50 min-h-screen">
           <h2 className="text-lg font-bold mb-4 text-red-600">Sistemas de Desarrollo Social</h2>
           <nav>
             <ul className="space-y-1 pl-4">
@@ -72,17 +72,17 @@ export default async function IndustryDetailPage({
           </nav>
         </aside>
 
-        {/* Right Content - 80% */}
-        <div className="w-[80%] p-8">
+        {/* Right Content - 80% on desktop, 100% on mobile */}
+        <div className="w-full md:w-[80%] p-4 md:p-8">
           {/* Header Section - Full Width of Right Side */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">{industry.name}</h1>
             <p className="text-lg text-gray-600">{industry.description}</p>
           </div>
 
-          {/* Industry Image - Full Width of Right Side */}
+          {/* Industry Image - Responsive Height */}
           {industry.image && (
-            <div className="relative w-full h-125 mb-8 rounded-lg overflow-hidden">
+            <div className="relative w-full h-64 md:h-125 mb-8 rounded-lg overflow-hidden">
               <Image
                 src={industry.image}
                 alt={industry.name}
@@ -93,10 +93,10 @@ export default async function IndustryDetailPage({
             </div>
           )}
 
-          {/* Split Content: 40% Projects + 30% Valores */}
-          <div className="flex gap-8">
-            {/* Center Section - 40% of Full Page (57% of 70%) */}
-            <div className="flex-6">
+          {/* Split Content: Stack on mobile, side-by-side on desktop */}
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Projects Section - Full width on mobile, 60% on desktop */}
+            <div className="w-full md:flex-6">
               <h2 className="text-2xl font-bold mb-6">Proyectos</h2>
               {industryProjects.length === 0 ? (
                 <p className="text-gray-600 text-sm">
@@ -139,8 +139,8 @@ export default async function IndustryDetailPage({
               )}
             </div>
 
-            {/* Right Section - 30% of Full Page (43% of 70%) */}
-            <div className="flex-2">
+            {/* Sobre Panitex Section - Below projects on mobile, right side on desktop */}
+            <div className="w-full md:flex-2">
               <h2 className="text-2xl font-bold mb-4">Sobre Panitex</h2>
               <div className="text-sm text-gray-600 space-y-3">
                 <h3 className="font-semibold text-base text-gray-800 mb-1">
