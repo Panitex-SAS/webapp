@@ -192,7 +192,7 @@ export default function Home() {
             Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.
           </p>
           <Link
-            href="/nosotros"
+            href="/nosotros/proposito-valores"
             className="inline-flex items-center text-red-600 hover:underline transition-all">
             Aprende de nuestro propósito y valores
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
