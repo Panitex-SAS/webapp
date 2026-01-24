@@ -36,3 +36,13 @@ a:hover {
   display: flex;
   width: max-content;
 }
+
+/* Value sections scroll highlight effect */
+.value-section.section-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.value-section {
+  transform: translateX(-10px);
+}
