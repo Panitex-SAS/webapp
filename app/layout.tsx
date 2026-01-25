@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Panitex S.A.S" }],
   creator: "Panitex S.A.S",
   publisher: "Panitex S.A.S",
+  verification: {
+    google: "R5uyY4MB6o9Xu7QxPtdJL1AjhqB6EHh1hTzylZirBOw",
+  },
   formatDetection: {
     email: false,
     address: false,

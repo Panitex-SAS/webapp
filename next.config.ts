@@ -51,6 +51,17 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  // Redirects
+  async redirects() {
+    return [
+      {
+        source: '/cpanel',
+        destination: 'http://50.87.7.74:2083',
+        permanent: false,
+      },
+    ];
+  },
+
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
