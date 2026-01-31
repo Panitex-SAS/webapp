@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import {useLocale} from 'next-intl';
-import {getLocale} from 'next-intl/server';
 import industriesData from "../../data/industries.json";
 import projectsData from "../../data/projects.json";
 import type { Industry, Project } from "../../types";

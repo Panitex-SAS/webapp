@@ -1,6 +1,6 @@
 import {routing} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
-import {getTranslations, setRequestLocale} from 'next-intl/server';
+import {setRequestLocale} from 'next-intl/server';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -24,7 +24,6 @@ export function generateStaticParams() {
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'HomePage'});
  
   return {
     title: {
@@ -99,7 +98,7 @@ export default async function LocaleLayout({
   const {locale} = await params;
   
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as 'es' | 'en')) {
     notFound();
   }
  

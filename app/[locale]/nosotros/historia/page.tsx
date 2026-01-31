@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import {useLocale} from 'next-intl';
 import nosotrosData from "../../data/nosotros.json";
+import type { LocalizedString } from "../../types";
 import Breadcrumb from "../../components/Breadcrumb";
 import { useEffect, useRef } from "react";
 
 interface NosotrosSection {
   id: string;
-  name: string;
+  name: LocalizedString;
   image: string;
 }
 
@@ -61,6 +63,7 @@ const timelineEvents: TimelineEvent[] = [
 ];
 
 export default function HistoriaPage() {
+  const locale = useLocale() as 'es' | 'en';
   const sections = nosotrosData as NosotrosSection[];
   const timelineRef = useRef<HTMLDivElement>(null);
 
@@ -93,7 +96,7 @@ export default function HistoriaPage() {
       <div className="flex">
         {/* Left Sidebar - 20% - Nosotros Menu - Hidden on Mobile */}
         <aside className="hidden md:block md:w-[20%] p-6 bg-white min-h-screen">
-          <h2 className="text-lg font-bold mb-4 text-red-600">Nosotros</h2>
+          <h2 className="text-lg font-bold mb-4 text-red-600">{locale === 'es' ? 'Nosotros' : 'About Us'}</h2>
           <nav>
             <ul className="space-y-1 pl-4">
               {sections.map((sec) => (
@@ -106,7 +109,7 @@ export default function HistoriaPage() {
                         : "text-gray-700 hover:text-red-600 hover:underline"
                     }`}
                   >
-                    {sec.name}
+                    {sec.name[locale]}
                   </Link>
                 </li>
               ))}
