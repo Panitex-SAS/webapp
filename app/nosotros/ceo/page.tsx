@@ -56,7 +56,7 @@ export default function CEOPage() {
             {/* First Paragraph */}
             <div className="text-lg text-gray-600 leading-relaxed">
               <p>
-                René Silva lidera hoy a Panitex como su fundador y CEO, dirigiendo la estrategia y la ejecución de proyectos de alta complejidad para el sector público. Con más de 30 años de experiencia en contratación pública y privada, ha sido responsable de la ejecución de más de 60 contratos públicos, además de atender a 155 comunidades indígenas tras la integración de movilidad fluvial y marítima, protección, comunicaciones y dotaciones especializadas en territorios de difícil acceso.
+                René Silva lidera hoy a Panitex como su fundador y CEO, dirigiendo la estrategia y la ejecución de proyectos de alta complejidad para el sector público. Con más de 30 años de experiencia en contratación pública y privada, ha sido responsable de la ejecución de más de 60 contratos públicos, además de atender a 177 comunidades indígenas tras la integración de movilidad fluvial y marítima, protección, comunicaciones y dotaciones especializadas en territorios de difícil acceso.
               </p>
             </div>
 

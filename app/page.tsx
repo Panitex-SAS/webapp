@@ -143,7 +143,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-lg text-red-600 leading-relaxed">
-                <b>Panitex</b> ha implementado en <b><i>127 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>166 embarcaciones</b>, <b>221 motores</b> y más de <b>8300 accesorios</b>.
+                <b>Panitex</b> ha implementado en <b><i>177 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>358 embarcaciones</b>, <b>429 motores</b> y más de <b>17500 accesorios</b>.
               </p>
             </div>
 
