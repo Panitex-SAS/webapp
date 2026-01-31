@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import {useLocale} from 'next-intl';
+import {Link} from "../../../../i18n/routing";
+import {useLocale, useTranslations} from 'next-intl';
 import nosotrosData from "@locale/data/nosotros.json";
 import type { LocalizedString } from "@locale/types";
 import Breadcrumb from "@locale/components/Breadcrumb";
@@ -13,59 +13,22 @@ interface NosotrosSection {
   image: string;
 }
 
-interface TimelineEvent {
-  year: string;
-  title: string;
-  description: string;
-}
-
-const timelineEvents: TimelineEvent[] = [
-  {
-    year: "2009",
-    title: "Fundación y primer gran contrato",
-    description: "Se funda Panitex. Ese mismo año ejecuta su primera facturación relevante con Totto, suministrando camisetas a gran escala, consolidando capacidades productivas y logísticas."
-  },
-  {
-    year: "2010",
-    title: "Desarrollo de material balístico",
-    description: "Inicio de la línea de material balístico, enfocada en chalecos antibalas, marcando la entrada de Panitex al sector de protección y seguridad."
-  },
-  {
-    year: "2011",
-    title: "Blindaje vehicular",
-    description: "Expansión hacia el blindaje de vehículos, fortaleciendo el conocimiento técnico y normativo en soluciones de protección para contextos de riesgo."
-  },
-  {
-    year: "2016",
-    title: "Primer contrato con formación institucional",
-    description: "Ejecución del primer contrato con la Escuela de Suboficiales, suministrando dotaciones especializadas y validando la capacidad de cumplimiento en entornos institucionales exigentes."
-  },
-  {
-    year: "2018",
-    title: "Primer contrato con la UNP",
-    description: "Inicio de operaciones con la Unidad Nacional de Protección (UNP), entregando dotaciones especializadas para comunidades indígenas y abriendo una nueva etapa de impacto social en territorios de alta complejidad."
-  },
-  {
-    year: "2019",
-    title: "Línea marítima y fluvial",
-    description: "Desarrollo de la línea de transporte marítimo y fluvial, integrando embarcaciones, motores y accesorios para mejorar la movilidad en regiones de difícil acceso."
-  },
-  {
-    year: "2020",
-    title: "Blindaje arquitectónico",
-    description: "Lanzamiento de la línea de blindaje arquitectónico, incluyendo cerramientos, puertas, ventanas y sistemas electrónicos de protección para personas e instalaciones en riesgo."
-  },
-  {
-    year: "2020–2026",
-    title: "Escalamiento territorial",
-    description: "Panitex amplía su alcance y llega a más de 150 comunidades indígenas, implementando sistemas integrales de movilidad, comunicación, protección y dotación especializada, consolidando su rol como aliado estratégico del Estado."
-  }
-];
-
 export default function HistoriaPage() {
+  const t = useTranslations('Historia');
   const locale = useLocale() as 'es' | 'en';
   const sections = nosotrosData as NosotrosSection[];
   const timelineRef = useRef<HTMLDivElement>(null);
+
+  const timelineEvents = [
+    { year: "2009", title: t('events.2009.title'), description: t('events.2009.description') },
+    { year: "2010", title: t('events.2010.title'), description: t('events.2010.description') },
+    { year: "2011", title: t('events.2011.title'), description: t('events.2011.description') },
+    { year: "2016", title: t('events.2016.title'), description: t('events.2016.description') },
+    { year: "2018", title: t('events.2018.title'), description: t('events.2018.description') },
+    { year: "2019", title: t('events.2019.title'), description: t('events.2019.description') },
+    { year: "2020", title: t('events.2020.title'), description: t('events.2020.description') },
+    { year: "2020–2026", title: t('events.2020-2026.title'), description: t('events.2020-2026.description') },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -88,8 +51,8 @@ export default function HistoriaPage() {
   return (
     <main className="min-h-screen">
       <Breadcrumb items={[
-        { label: "Inicio", href: "/" },
-        { label: "Nuestra Historia" }
+        { label: locale === 'es' ? "Inicio" : "Home", href: "/" },
+        { label: t('breadcrumbLabel') }
       ]} />
       
       {/* Main Layout: 20% Left Menu + 80% Content */}
@@ -121,7 +84,7 @@ export default function HistoriaPage() {
         <div className="w-full md:w-[80%] p-4 md:p-8">
           {/* Header */}
           <div className="mb-8 md:mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Nuestra Historia</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('title')}</h1>
           </div>
 
           {/* Timeline */}

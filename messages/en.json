@@ -69,21 +69,69 @@
   },
   "Historia": {
     "title": "Our History",
-    "subtitle": "A journey of dedication and commitment"
+    "subtitle": "A journey of dedication and commitment",
+    "breadcrumbLabel": "Our History",
+    "events": {
+      "2009": {
+        "title": "Foundation and first major contract",
+        "description": "Panitex is founded. That same year, it executes its first significant revenue with Totto, supplying shirts on a large scale, consolidating productive and logistical capabilities."
+      },
+      "2010": {
+        "title": "Development of ballistic material",
+        "description": "Launch of the ballistic material line, focused on bulletproof vests, marking Panitex's entry into the protection and security sector."
+      },
+      "2011": {
+        "title": "Vehicle armor",
+        "description": "Expansion into vehicle armoring, strengthening technical and regulatory knowledge in protection solutions for risk contexts."
+      },
+      "2016": {
+        "title": "First contract with institutional training",
+        "description": "Execution of the first contract with the Non-Commissioned Officers School, supplying specialized supplies and validating compliance capacity in demanding institutional environments."
+      },
+      "2018": {
+        "title": "First contract with UNP",
+        "description": "Start of operations with the National Protection Unit (UNP), delivering specialized supplies for indigenous communities and opening a new stage of social impact in highly complex territories."
+      },
+      "2019": {
+        "title": "Maritime and river line",
+        "description": "Development of the maritime and river transport line, integrating boats, motors and accessories to improve mobility in hard-to-reach regions."
+      },
+      "2020": {
+        "title": "Architectural armor",
+        "description": "Launch of the architectural armor line, including enclosures, doors, windows and electronic protection systems for people and facilities at risk."
+      },
+      "2020-2026": {
+        "title": "Territorial scaling",
+        "description": "Panitex expands its reach to more than 150 indigenous communities, implementing comprehensive systems of mobility, communication, protection and specialized supplies, consolidating its role as a strategic ally of the State."
+      }
+    }
   },
   "PurposeValues": {
-    "title": "Purpose and Values",
-    "purpose": "Purpose",
-    "purposeText": "Our purpose is to contribute to the social development of Colombia by providing public infrastructure solutions that generate positive impact on the most needy communities.",
-    "values": "Values",
-    "excellence": "Excellence",
-    "excellenceText": "We pursue excellence in every project, delivering the highest quality solutions.",
-    "responsibility": "Responsibility",
-    "responsibilityText": "We assume our social responsibility with commitment and dedication.",
-    "integrity": "Integrity",
-    "integrityText": "We act with transparency and ethics in all our operations.",
-    "innovation": "Innovation",
-    "innovationText": "We constantly innovate to offer the best solutions."
+    "title": "Our Purpose and Values",
+    "breadcrumbLabel": "Our Purpose and Values",
+    "sections": {
+      "reliability": {
+        "title": "Be reliable, always",
+        "subtitle": "Coherence, compliance and responsibility",
+        "content": "Trust is not declared, it is demonstrated. We build it by fulfilling what is agreed upon, respecting regulations and responding to every decision we make. In environments of high institutional demand, the coherence between what is promised and what is delivered is essential. We assume full responsibility for each contract, coordinating suppliers, teams and territories —including local allies— with a single objective: to deliver, without excuses, to those who trust us."
+      },
+      "service": {
+        "title": "Serve where it's most needed",
+        "subtitle": "Infrastructure as social responsibility",
+        "content1": "We understand infrastructure as a duty to society and a concrete way to exercise public service. At Panitex, each system we implement —maritime and river mobility, protection, communications or specialized supplies— seeks to reduce gaps in territories where access, security and institutional presence are limited. Serving where it's most needed implies executing with rigor, respect for people and understanding of the territory, generating solutions that strengthen the social fabric and State action.",
+        "content2": "When the context permits, we articulate our work with local suppliers —including regional and community shipyards— to strengthen productive capacities and ensure relevant and sustainable solutions."
+      },
+      "excellence": {
+        "title": "Execute with excellence",
+        "subtitle": "Doing things right, even under pressure",
+        "content": "Excellence is not a promise, it's a discipline. We operate in contexts where technical complexity, distance and risk demand precision, planning and consistency. Executing with excellence means anticipating scenarios, coordinating multiple actors and meeting technical and regulatory standards without deviations. Integrating local and specialized capabilities —from logistics to production— allows us to respond effectively in highly complex territories and deliver reliable results, even under demanding conditions."
+      },
+      "ethics": {
+        "title": "Act with ethics and transparency",
+        "subtitle": "Integrity without shortcuts",
+        "content": "Every decision we make is guided by clear principles of legality, integrity and openness. We operate with total transparency, especially in public contracting environments where trust is an asset that must be protected. We reject shortcuts, conflicts of interest and opaque practices. Acting ethically is an individual and collective responsibility that is reflected in how we contract, execute and are accountable, including clear and responsible relationships with suppliers and allies in the field."
+      }
+    }
   },
   "Contact": {
     "title": "Contact Us",
@@ -111,5 +159,25 @@
     "email": "Email",
     "location": "Location",
     "locationValue": "Bogotá, Colombia"
+  },
+  "IndustryDetail": {
+    "projectsTitle": "Projects",
+    "noProjects": "Projects in execution, check back soon.",
+    "client": "Client",
+    "year": "Year",
+    "viewSecop": "View on SECOP →",
+    "aboutPanitex": "About Panitex",
+    "socialResponsibility": {
+      "title": "Social responsibility at Panitex",
+      "content": "From the systems we implement to the way we execute them, Panitex works to strengthen social development in highly complex territories."
+    },
+    "ceo": {
+      "title": "Meet our CEO",
+      "content": "René Silva has over 30 years of experience in public and private contracting. His career always guided by the same dictum: \"Be reliable, always\"."
+    },
+    "reliability": {
+      "title": "Be reliable, always",
+      "content": "Reliability is built through delivery. At Panitex, we honor every commitment through rigorous execution, respect for regulations, and total responsibility for results."
+    }
   }
 }

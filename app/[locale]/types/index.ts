@@ -14,11 +14,11 @@ export interface Industry {
 
 export interface Project {
   id: string;
-  name: string;
+  name: LocalizedString;
   industryId: string;
-  description: string;
+  description: LocalizedString;
   client: string | null;
   year: string;
-  image: string;
+  image?: string;
   sourceUrl: string | null;
 }

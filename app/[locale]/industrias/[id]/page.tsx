@@ -1,5 +1,6 @@
-import Link from "next/link";
+import {Link} from "../../../../i18n/routing";
 import Image from "next/image";
+import { getTranslations } from 'next-intl/server';
 import industriesData from "@locale/data/industries.json";
 import projectsData from "@locale/data/projects.json";
 import type { Industry, Project } from "@locale/types";
@@ -12,6 +13,7 @@ export default async function IndustryDetailPage({
 }) {
   const { id, locale } = await params;
   const localeKey = locale as 'es' | 'en';
+  const t = await getTranslations('IndustryDetail');
   const industries = industriesData as Industry[];
   const projects = projectsData as Project[];
 
@@ -98,10 +100,10 @@ export default async function IndustryDetailPage({
           <div className="flex flex-col md:flex-row gap-8">
             {/* Projects Section - Full width on mobile, 60% on desktop */}
             <div className="w-full md:flex-6">
-              <h2 className="text-2xl font-bold mb-6">Proyectos</h2>
+              <h2 className="text-2xl font-bold mb-6">{t('projectsTitle')}</h2>
               {industryProjects.length === 0 ? (
                 <p className="text-gray-600 text-sm">
-                  Proyectos en ejecución, vuelve pronto.
+                  {t('noProjects')}
                 </p>
               ) : (
                 <div className="space-y-4">
@@ -110,16 +112,16 @@ export default async function IndustryDetailPage({
                       key={project.id}
                       className="p-4 border rounded-lg hover:shadow-lg transition-shadow bg-white"
                     >
-                      <h3 className="text-lg font-semibold mb-2">{project.name}</h3>
-                      <p className="text-gray-600 text-sm mb-3">{project.description}</p>
+                      <h3 className="text-lg font-semibold mb-2">{project.name[localeKey]}</h3>
+                      <p className="text-gray-600 text-sm mb-3">{project.description[localeKey]}</p>
                       <div className="space-y-1 text-xs text-gray-500">
                         {project.client && (
                           <p>
-                            <strong>Cliente:</strong> {project.client}
+                            <strong>{t('client')}:</strong> {project.client}
                           </p>
                         )}
                         <p>
-                          <strong>Año:</strong> {project.year}
+                          <strong>{t('year')}:</strong> {project.year}
                         </p>
                         {project.sourceUrl && (
                           <p>
@@ -129,7 +131,7 @@ export default async function IndustryDetailPage({
                               rel="noopener noreferrer"
                               className="text-red-600 hover:underline"
                             >
-                              Ver en SECOP →
+                              {t('viewSecop')} →
                             </a>
                           </p>
                         )}
@@ -142,22 +144,22 @@ export default async function IndustryDetailPage({
 
             {/* Sobre Panitex Section - Below projects on mobile, right side on desktop */}
             <div className="w-full md:flex-2">
-              <h2 className="text-2xl font-bold mb-4">Sobre Panitex</h2>
+              <h2 className="text-2xl font-bold mb-4">{t('aboutPanitex')}</h2>
               <div className="text-sm text-gray-600 space-y-3">
                 <h3 className="font-semibold text-base text-gray-800 mb-1">
-                  Responsabilidad social en Panitex</h3>
+                  {t('socialResponsibility.title')}</h3>
                 <p>
-                  Desde los sistemas que implementamos hasta la forma en que los ejecutamos, <b>Panitex</b> trabaja para fortalecer el desarrollo social en territorios de alta complejidad.
+                  {t('socialResponsibility.content')}
                 </p>
                 <h3 className="font-semibold text-base text-gray-800 mb-1 mt-4">
-                  Conoce a nuestro CEO</h3>
+                  {t('ceo.title')}</h3>
                 <p>
-                  René Silva cuenta con más de 30 años de experiencia en contratación pública y privada. Su trayectoria guiada siempre por el mismo dictum: “Ser confiables, siempre”.
+                  {t('ceo.content')}
                 </p>
                 <h3 className="font-semibold text-base text-gray-800 mb-1 mt-4">
-                  Ser confiables, siempre</h3>
+                  {t('reliability.title')}</h3>
                 <p>
-                  La confiabilidad se construye cumpliendo. En Panitex, honramos cada compromiso mediante una ejecución rigurosa, el respeto por la normativa y la responsabilidad total sobre los resultados.
+                  {t('reliability.content')}
                 </p>
               </div>
             </div>

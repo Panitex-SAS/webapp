@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import Link from "next/link";
-import {useLocale} from 'next-intl';
+import {Link} from "../../../../i18n/routing";
+import {useLocale, useTranslations} from 'next-intl';
 import nosotrosData from "@locale/data/nosotros.json";
 import type { LocalizedString } from "@locale/types";
 import Breadcrumb from "@locale/components/Breadcrumb";
@@ -14,6 +14,7 @@ interface NosotrosSection {
 }
 
 export default function PropositoValoresPage() {
+  const t = useTranslations('PurposeValues');
   const locale = useLocale() as 'es' | 'en';
   const sections = nosotrosData as NosotrosSection[];
 
@@ -38,8 +39,8 @@ export default function PropositoValoresPage() {
   return (
     <main className="min-h-screen">
       <Breadcrumb items={[
-        { label: "Inicio", href: "/" },
-        { label: "Nuestro Propósito y Valores" }
+        { label: locale === 'es' ? "Inicio" : "Home", href: "/" },
+        { label: t('breadcrumbLabel') }
       ]} />
       
       {/* Main Layout: 20% Left Menu + 80% Content */}
@@ -71,19 +72,17 @@ export default function PropositoValoresPage() {
         <div className="w-full md:w-[80%] p-4 md:p-8">
           {/* Header */}
           <div className="mb-8 md:mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Nuestro Propósito y Valores</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('title')}</h1>
           </div>
 
           {/* Content */}
           <div className="max-w-full md:max-w-4xl mx-auto space-y-8 md:space-y-12">
             {/* Section 1 */}
             <section className="value-section border-l-4 border-red-600 pl-4 md:pl-8 py-2 opacity-40 transition-all duration-500">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">Ser confiables, siempre</h2>
-              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">Coherencia, cumplimiento y responsabilidad</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">{t('sections.reliability.title')}</h2>
+              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">{t('sections.reliability.subtitle')}</p>
               <div className="text-base md:text-lg text-gray-600 space-y-3 md:space-y-4 leading-relaxed">
-                <p>
-                  La confianza no se declara, se demuestra. La construimos cumpliendo lo acordado, respetando la normativa y respondiendo por cada decisión que tomamos. En entornos de alta exigencia institucional, la coherencia entre lo que se promete y lo que se entrega es esencial. Asumimos la responsabilidad integral de cada contrato, coordinando proveedores, equipos y territorios —incluidos aliados locales— con un único objetivo: cumplir, sin excusas, con quienes confían en nosotros.
-                </p>
+                <p>{t('sections.reliability.content')}</p>
               </div>
             </section>
 
@@ -92,15 +91,11 @@ export default function PropositoValoresPage() {
 
             {/* Section 2 */}
             <section className="value-section border-l-4 border-red-600 pl-4 md:pl-8 py-2 opacity-40 transition-all duration-500">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">Servir donde más se necesita</h2>
-              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">La infraestructura como responsabilidad social</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">{t('sections.service.title')}</h2>
+              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">{t('sections.service.subtitle')}</p>
               <div className="text-base md:text-lg text-gray-600 space-y-3 md:space-y-4 leading-relaxed">
-                <p>
-                  Entendemos la infraestructura como un deber con la sociedad y una forma concreta de ejercer lo público. En <strong>Panitex</strong>, cada sistema que implementamos —movilidad marítima y fluvial, protección, comunicaciones o dotaciones especializadas— busca reducir brechas en territorios donde el acceso, la seguridad y la presencia institucional son limitados. Servir donde más se necesita implica ejecutar con rigor, respeto por las personas y comprensión del territorio, generando soluciones que fortalecen el tejido social y la acción del Estado.
-                </p>
-                <p>
-                  Cuando el contexto lo permite, articulamos nuestro trabajo con proveedores locales —incluidos astilleros regionales y comunitarios— para fortalecer capacidades productivas y asegurar soluciones pertinentes y sostenibles.
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t('sections.service.content1') }} />
+                <p>{t('sections.service.content2')}</p>
               </div>
             </section>
 
@@ -109,12 +104,10 @@ export default function PropositoValoresPage() {
 
             {/* Section 3 */}
             <section className="value-section border-l-4 border-red-600 pl-4 md:pl-8 py-2 opacity-40 transition-all duration-500">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">Ejecutar con excelencia</h2>
-              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">Hacer las cosas bien, incluso bajo presión</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">{t('sections.excellence.title')}</h2>
+              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">{t('sections.excellence.subtitle')}</p>
               <div className="text-base md:text-lg text-gray-600 space-y-3 md:space-y-4 leading-relaxed">
-                <p>
-                  La excelencia no es una promesa, es una disciplina. Operamos en contextos donde la complejidad técnica, la distancia y el riesgo exigen precisión, planificación y consistencia. Ejecutar con excelencia significa anticipar escenarios, coordinar múltiples actores y cumplir con estándares técnicos y normativos sin desviaciones. Integrar capacidades locales y especializadas —desde logística hasta producción— nos permite responder con eficacia en territorios de alta complejidad y entregar resultados confiables, aun bajo condiciones exigentes.
-                </p>
+                <p>{t('sections.excellence.content')}</p>
               </div>
             </section>
 
@@ -124,12 +117,10 @@ export default function PropositoValoresPage() {
 
             {/* Section 4 */}
             <section className="value-section border-l-4 border-red-600 pl-4 md:pl-8 py-2 opacity-40 transition-all duration-500">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">Actuar con ética y transparencia</h2>
-              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">Integridad sin atajos</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">{t('sections.ethics.title')}</h2>
+              <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">{t('sections.ethics.subtitle')}</p>
               <div className="text-base md:text-lg text-gray-600 space-y-3 md:space-y-4 leading-relaxed">
-                <p>
-                  Cada decisión que tomamos está guiada por principios claros de legalidad, integridad y apertura. Operamos con total transparencia, especialmente en entornos de contratación pública donde la confianza es un activo que debe protegerse. Rechazamos los atajos, los conflictos de interés y las prácticas opacas. Actuar con ética es una responsabilidad individual y colectiva que se refleja en cómo contratamos, ejecutamos y rendimos cuentas, incluyendo la relación clara y responsable con proveedores y aliados en territorio.
-                </p>
+                <p>{t('sections.ethics.content')}</p>
               </div>
             </section>
           </div>
