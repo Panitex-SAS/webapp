@@ -37,15 +37,15 @@ export default function Home() {
   useEffect(() => {
     if (!isVisible) return;
 
-    // Animate KPI 1: 127
+    // Animate KPI 1: 177
     const duration1 = 2000;
     const steps1 = 60;
-    const increment1 = 127 / steps1;
+    const increment1 = 177 / steps1;
     let current1 = 0;
     const timer1 = setInterval(() => {
       current1 += increment1;
-      if (current1 >= 127) {
-        setCount1(127);
+      if (current1 >= 177) {
+        setCount1(177);
         clearInterval(timer1);
       } else {
         setCount1(Math.floor(current1));
@@ -143,7 +143,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-lg text-red-600 leading-relaxed">
-                <b>Panitex</b> ha implementado en <b><i>177 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>358 embarcaciones</b>, <b>429 motores</b> y más de <b>17500 accesorios</b>.
+                <b>Panitex</b> ha implementado en <b><i>177 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>358 embarcaciones</b>, <b>429 motores</b> y más de <b>17,500 accesorios</b>.
               </p>
             </div>
 
