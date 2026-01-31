@@ -147,7 +147,12 @@ export default function Home() {
                 />
               </div>
               <p className="text-lg text-red-600 leading-relaxed">
-                <b>Panitex</b> {t('territorial.description')}
+                <b>Panitex</b>{' '}
+                {t.rich('territorial.description', {
+                  b: (chunks) => <b>{chunks}</b>,
+                  i: (chunks) => <i>{chunks}</i>,
+                  u: (chunks) => <u>{chunks}</u>
+                })}
               </p>
             </div>
 
