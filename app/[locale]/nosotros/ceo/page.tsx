@@ -3,9 +3,9 @@
 import {Link} from "../../../../i18n/routing";
 import Image from "next/image";
 import {useTranslations, useLocale} from 'next-intl';
-import nosotrosData from "../../data/nosotros.json";
-import type { LocalizedString } from "../../types";
-import Breadcrumb from "../../components/Breadcrumb";
+import nosotrosData from "@locale/data/nosotros.json";
+import type { LocalizedString } from "@locale/types";
+import Breadcrumb from "@locale/components/Breadcrumb";
 
 interface NosotrosSection {
   id: string;

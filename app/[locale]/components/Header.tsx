@@ -4,10 +4,10 @@ import {Link} from "../../../i18n/routing";
 import Image from "next/image";
 import { useState, useCallback } from "react";
 import {useTranslations, useLocale} from 'next-intl';
-import industriesData from "../data/industries.json";
-import nosotrosData from "../data/nosotros.json";
-import type { Industry, LocalizedString } from "../types";
-import LanguageSwitcher from "./LanguageSwitcher";
+import industriesData from "@locale/data/industries.json";
+import nosotrosData from "@locale/data/nosotros.json";
+import type { Industry, LocalizedString } from "@locale/types";
+import LanguageSwitcher from "@locale/components/LanguageSwitcher";
 
 interface NosotrosSection {
   id: string;

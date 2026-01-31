@@ -2,10 +2,10 @@ import {routing} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
 import {setRequestLocale} from 'next-intl/server';
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ErrorBoundary from "./components/ErrorBoundary";
+import "@locale/globals.css";
+import Header from "@locale/components/Header";
+import Footer from "@locale/components/Footer";
+import ErrorBoundary from "@locale/components/ErrorBoundary";
 import {NextIntlClientProvider} from 'next-intl';
 
 const geistSans = Geist({

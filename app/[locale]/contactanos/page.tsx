@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import Image from "next/image";
-import Breadcrumb from "../components/Breadcrumb";
+import Breadcrumb from "@locale/components/Breadcrumb";
 
 export default function ContactanosPage() {
   const [formData, setFormData] = useState({

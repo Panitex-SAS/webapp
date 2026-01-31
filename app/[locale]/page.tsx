@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import {Link} from "../../i18n/routing";
 import Image from "next/image";
 import {useTranslations, useLocale} from 'next-intl';
-import ImageCarousel from "./components/ImageCarousel";
-import industriesData from "./data/industries.json";
-import type { Industry } from "./types";
+import ImageCarousel from "@locale/components/ImageCarousel";
+import industriesData from "@locale/data/industries.json";
+import type { Industry } from "@locale/types";
 
 export default function Home() {
   const t = useTranslations('HomePage');

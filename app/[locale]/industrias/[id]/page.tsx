@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import industriesData from "../../data/industries.json";
-import projectsData from "../../data/projects.json";
-import type { Industry, Project } from "../../types";
-import Breadcrumb from "../../components/Breadcrumb";
+import industriesData from "@locale/data/industries.json";
+import projectsData from "@locale/data/projects.json";
+import type { Industry, Project } from "@locale/types";
+import Breadcrumb from "@locale/components/Breadcrumb";
 
 export default async function IndustryDetailPage({
   params,
