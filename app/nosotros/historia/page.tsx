@@ -56,7 +56,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     year: "2020–2026",
     title: "Escalamiento territorial",
-    description: "Panitex amplía su alcance y llega a más de 120 comunidades indígenas, implementando sistemas integrales de movilidad, comunicación, protección y dotación especializada, consolidando su rol como aliado estratégico del Estado."
+    description: "Panitex amplía su alcance y llega a más de 150 comunidades indígenas, implementando sistemas integrales de movilidad, comunicación, protección y dotación especializada, consolidando su rol como aliado estratégico del Estado."
   }
 ];
 
