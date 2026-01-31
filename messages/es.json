@@ -58,9 +58,14 @@
     "purposeValues": "Propósito y Valores"
   },
   "CEO": {
-    "title": "Rene Silva - CEO",
-    "role": "Fundador y Director Ejecutivo",
-    "description": "Con más de 20 años de experiencia en el sector industrial, Rene Silva ha liderado la transformación de Panitex en una empresa líder en soluciones para el desarrollo social e infraestructura pública en Colombia."
+    "title": "Nuestro CEO",
+    "name": "René Silva",
+    "role": "Fundador y CEO",
+    "intro": "René Silva lidera hoy a Panitex como su fundador y CEO, dirigiendo la estrategia y la ejecución de proyectos de alta complejidad para el sector público. Con más de 30 años de experiencia en contratación pública y privada, ha sido responsable de la ejecución de más de 60 contratos públicos, además de atender a 177 comunidades indígenas tras la integración de movilidad fluvial y marítima, protección, comunicaciones y dotaciones especializadas en territorios de difícil acceso.",
+    "principle": "El principio rector de René sigue siendo el mismo que ha guiado toda su trayectoria: \"Ser confiables, siempre\". Para él, liderar Panitex significa asumir que cada contrato ejecutado impacta vidas, instituciones y comunidades. Por eso, la confianza no es solo un valor corporativo: es la base sobre la cual se construyen relaciones duraderas con el Estado, proveedores y con los territorios que más lo necesitan.",
+    "formation": "Formado en el sector textil desde sus cimientos, René Silva desarrolló su carrera entendiendo que la confianza no es un discurso, sino un resultado. Su experiencia abarcó toda la cadena productiva textil y la dirección de equipos comerciales en compañías líderes del país. Este recorrido le permitió comprender cómo estructurar operaciones eficientes, cumplir estándares técnicos exigentes y responder con precisión a contratos de alta responsabilidad institucional.",
+    "international": "A esta experiencia se suma una amplia exposición internacional a lo largo de su carrera empresarial, que ha permitido a René desarrollar una capacidad de reconocimiento de patrones operativos, culturales y logísticos. Esta habilidad le ha facilitado adaptar soluciones, anticipar riesgos y tomar decisiones informadas en contextos diversos, trasladando aprendizajes globales a realidades locales complejas.",
+    "leadership": "Hoy, René Silva entiende el desarrollo social no como un discurso, sino como un resultado medible de una ejecución bien hecha. Su liderazgo se centra en construir equipos, procesos y relaciones institucionales que permitan cumplir lo pactado, incluso en los escenarios más exigentes. Ese enfoque ha definido la cultura de Panitex desde su origen y sigue siendo el centro de la confiabilidad que caracteriza a la empresa."
   },
   "Historia": {
     "title": "Nuestra Historia",

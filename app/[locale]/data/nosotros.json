@@ -1,17 +1,26 @@
 [
   {
     "id": "ceo",
-    "name": "Nuestro CEO",
+    "name": {
+      "es": "Nuestro CEO",
+      "en": "Our CEO"
+    },
     "image": "/images/nosotros/rene_silva.png"
   },
   {
     "id": "historia",
-    "name": "Nuestra Historia",
+    "name": {
+      "es": "Nuestra Historia",
+      "en": "Our History"
+    },
     "image": "/images/nosotros/historia.jpg"
   },
   {
     "id": "proposito-valores",
-    "name": "Nuestro Propósito y Valores",
+    "name": {
+      "es": "Nuestro Propósito y Valores",
+      "en": "Our Purpose and Values"
+    },
     "image": "/images/nosotros/valores.jpg"
   }
 ]

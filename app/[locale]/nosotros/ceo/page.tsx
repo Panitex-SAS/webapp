@@ -1,29 +1,35 @@
-import Link from "next/link";
+"use client";
+
+import {Link} from "../../../../i18n/routing";
 import Image from "next/image";
+import {useTranslations, useLocale} from 'next-intl';
 import nosotrosData from "../../data/nosotros.json";
+import type { LocalizedString } from "../../types";
 import Breadcrumb from "../../components/Breadcrumb";
 
 interface NosotrosSection {
   id: string;
-  name: string;
+  name: LocalizedString;
   image: string;
 }
 
 export default function CEOPage() {
+  const t = useTranslations('CEO');
+  const locale = useLocale() as 'es' | 'en';
   const sections = nosotrosData as NosotrosSection[];
 
   return (
     <main className="min-h-screen">
       <Breadcrumb items={[
-        { label: "Inicio", href: "/" },
-        { label: "Nuestro CEO" }
+        { label: locale === 'es' ? "Inicio" : "Home", href: "/" },
+        { label: t('title') }
       ]} />
       
       {/* Main Layout: 20% Left Menu + 80% Content */}
       <div className="flex">
         {/* Left Sidebar - 20% - Nosotros Menu - Hidden on Mobile */}
         <aside className="hidden md:block md:w-[20%] p-6 bg-white min-h-screen">
-          <h2 className="text-lg font-bold mb-4 text-red-600">Nosotros</h2>
+          <h2 className="text-lg font-bold mb-4 text-red-600">{locale === 'es' ? 'Nosotros' : 'About Us'}</h2>
           <nav>
             <ul className="space-y-1 pl-4">
               {sections.map((sec) => (
@@ -36,7 +42,7 @@ export default function CEOPage() {
                         : "text-gray-700 hover:text-red-600 hover:underline"
                     }`}
                   >
-                    {sec.name}
+                    {sec.name[locale]}
                   </Link>
                 </li>
               ))}
@@ -48,7 +54,7 @@ export default function CEOPage() {
         <div className="w-full md:w-[80%] p-4 md:p-8">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-6">Nuestro CEO</h1>
+            <h1 className="text-4xl font-bold mb-6">{t('title')}</h1>
           </div>
 
           {/* Content: Full width layout */}
@@ -56,7 +62,7 @@ export default function CEOPage() {
             {/* First Paragraph */}
             <div className="text-lg text-gray-600 leading-relaxed">
               <p>
-                René Silva lidera hoy a Panitex como su fundador y CEO, dirigiendo la estrategia y la ejecución de proyectos de alta complejidad para el sector público. Con más de 30 años de experiencia en contratación pública y privada, ha sido responsable de la ejecución de más de 60 contratos públicos, además de atender a 177 comunidades indígenas tras la integración de movilidad fluvial y marítima, protección, comunicaciones y dotaciones especializadas en territorios de difícil acceso.
+                {t('intro')}
               </p>
             </div>
 
@@ -75,16 +81,12 @@ export default function CEOPage() {
             {/* Remaining Paragraphs */}
             <div className="text-lg text-gray-600 space-y-6 leading-relaxed">
               <p>
-                El principio rector de René sigue siendo el mismo que ha guiado toda su trayectoria: &quot;Ser confiables, siempre&quot;. Para él, liderar Panitex significa asumir que cada contrato ejecutado impacta vidas, instituciones y comunidades. Por eso, la confianza no es solo un valor corporativo: es la base sobre la cual se construyen relaciones duraderas con el Estado, proveedores y con los territorios que más lo necesitan.
+                {t('principle')}
               </p>
+              <p dangerouslySetInnerHTML={{ __html: t('formation') }} />
+              <p dangerouslySetInnerHTML={{ __html: t('international') }} />
               <p>
-                Formado en el sector textil desde sus cimientos, René Silva desarrolló su carrera entendiendo que <strong>la confianza no es un discurso, sino un resultado</strong>. Su experiencia abarcó toda la cadena productiva textil y la dirección de equipos comerciales en compañías líderes del país. Este recorrido le permitió comprender cómo estructurar operaciones eficientes, cumplir estándares técnicos exigentes y responder con precisión a contratos de alta responsabilidad institucional.
-              </p>
-              <p>
-                A esta experiencia se suma una amplia exposición internacional a lo largo de su carrera empresarial, que ha permitido a René desarrollar una <strong>capacidad de reconocimiento de patrones</strong> operativos, culturales y logísticos. Esta habilidad le ha facilitado adaptar soluciones, anticipar riesgos y tomar decisiones informadas en contextos diversos, trasladando aprendizajes globales a realidades locales complejas.
-              </p>
-              <p>
-                Hoy, René Silva entiende el desarrollo social no como un discurso, sino como un resultado medible de una ejecución bien hecha. Su liderazgo se centra en construir equipos, procesos y relaciones institucionales que permitan cumplir lo pactado, incluso en los escenarios más exigentes. Ese enfoque ha definido la cultura de Panitex desde su origen y sigue siendo el centro de la confiabilidad que caracteriza a la empresa.
+                {t('leadership')}
               </p>
             </div>
           </div>

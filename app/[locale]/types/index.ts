@@ -1,9 +1,14 @@
 // Shared TypeScript types for the application
 
+export interface LocalizedString {
+  es: string;
+  en: string;
+}
+
 export interface Industry {
   id: string;
-  name: string;
-  description: string;
+  name: LocalizedString;
+  description: LocalizedString;
   image?: string;
 }
 

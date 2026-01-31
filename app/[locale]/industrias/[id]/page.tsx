@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import {useLocale} from 'next-intl';
+import {getLocale} from 'next-intl/server';
 import industriesData from "../../data/industries.json";
 import projectsData from "../../data/projects.json";
 import type { Industry, Project } from "../../types";
@@ -8,9 +10,10 @@ import Breadcrumb from "../../components/Breadcrumb";
 export default async function IndustryDetailPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: string; locale: string }>;
 }) {
-  const { id } = await params;
+  const { id, locale } = await params;
+  const localeKey = locale as 'es' | 'en';
   const industries = industriesData as Industry[];
   const projects = projectsData as Project[];
 
@@ -23,16 +26,16 @@ export default async function IndustryDetailPage({
     return (
       <main className="min-h-screen p-8">
         <Breadcrumb items={[
-          { label: "Inicio", href: "/" },
-          { label: "Industria no encontrada" }
+          { label: localeKey === 'es' ? "Inicio" : "Home", href: "/" },
+          { label: localeKey === 'es' ? "Industria no encontrada" : "Industry not found" }
         ]} />
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Industria no encontrada</h1>
+          <h1 className="text-4xl font-bold mb-6">{localeKey === 'es' ? 'Industria no encontrada' : 'Industry not found'}</h1>
           <Link
             href="/"
             className="text-red-600 hover:text-red-700 underline"
           >
-            Volver al inicio
+            {localeKey === 'es' ? 'Volver al inicio' : 'Back to home'}
           </Link>
         </div>
       </main>
@@ -42,16 +45,16 @@ export default async function IndustryDetailPage({
   return (
     <main className="min-h-screen">
       <Breadcrumb items={[
-        { label: "Inicio", href: "/" },
-        { label: "Sistemas de Desarrollo Social", href: "/industrias" },
-        { label: industry.name }
+        { label: localeKey === 'es' ? "Inicio" : "Home", href: "/" },
+        { label: localeKey === 'es' ? "Sistemas de Desarrollo Social" : "Social Development Systems", href: "/industrias" },
+        { label: industry.name[localeKey] }
       ]} />
       
       {/* Main Layout: 20% Left Menu + 80% Content */}
       <div className="flex">
         {/* Left Sidebar - 20% - Industries Menu - Hidden on Mobile */}
         <aside className="hidden md:block md:w-[20%] p-6 bg-gray-50 min-h-screen">
-          <h2 className="text-lg font-bold mb-4 text-red-600">Sistemas de Desarrollo Social</h2>
+          <h2 className="text-lg font-bold mb-4 text-red-600">{localeKey === 'es' ? 'Sistemas de Desarrollo Social' : 'Social Development Systems'}</h2>
           <nav>
             <ul className="space-y-1 pl-4">
               {industries.map((ind) => (
@@ -64,7 +67,7 @@ export default async function IndustryDetailPage({
                         : "text-gray-700 hover:text-red-600 hover:underline"
                     }`}
                   >
-                    {ind.name}
+                    {ind.name[localeKey]}
                   </Link>
                 </li>
               ))}
@@ -76,8 +79,8 @@ export default async function IndustryDetailPage({
         <div className="w-full md:w-[80%] p-4 md:p-8">
           {/* Header Section - Full Width of Right Side */}
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">{industry.name}</h1>
-            <p className="text-lg text-gray-600">{industry.description}</p>
+            <h1 className="text-4xl font-bold mb-4">{industry.name[localeKey]}</h1>
+            <p className="text-lg text-gray-600">{industry.description[localeKey]}</p>
           </div>
 
           {/* Industry Image - Responsive Height */}
@@ -85,7 +88,7 @@ export default async function IndustryDetailPage({
             <div className="relative w-full h-64 md:h-125 mb-8 rounded-lg overflow-hidden">
               <Image
                 src={industry.image}
-                alt={industry.name}
+                alt={industry.name[localeKey]}
                 fill
                 sizes="70vw"
                 className="object-cover"

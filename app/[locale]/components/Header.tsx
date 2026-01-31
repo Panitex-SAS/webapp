@@ -3,20 +3,21 @@
 import {Link} from "../../../i18n/routing";
 import Image from "next/image";
 import { useState, useCallback } from "react";
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 import industriesData from "../data/industries.json";
 import nosotrosData from "../data/nosotros.json";
-import type { Industry } from "../types";
+import type { Industry, LocalizedString } from "../types";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 interface NosotrosSection {
   id: string;
-  name: string;
+  name: LocalizedString;
   image: string;
 }
 
 export default function Header() {
   const t = useTranslations('Header');
+  const locale = useLocale() as 'es' | 'en';
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isNosotrosOpen, setIsNosotrosOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -184,7 +185,7 @@ export default function Header() {
                         className="block text-gray-600 hover:text-red-600 transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        {section.name}
+                        {section.name[locale]}
                       </Link>
                     </li>
                   ))}
@@ -206,7 +207,7 @@ export default function Header() {
                         className="block text-gray-600 hover:text-red-600 transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        {industry.name}
+                        {industry.name[locale]}
                       </Link>
                     </li>
                   ))}
@@ -240,7 +241,7 @@ export default function Header() {
                     href={`/nosotros/${section.id}`}
                     className="text-gray-700 hover:text-red-600 transition-colors font-medium text-base"
                   >
-                    {section.name}
+                    {section.name[locale]}
                   </Link>
                   {index < nosotrosSections.length - 1 && (
                     <span className="text-gray-300 mx-4">|</span>
@@ -266,7 +267,7 @@ export default function Header() {
                     href={`/industrias/${industry.id}`}
                     className="text-gray-700 hover:text-red-600 transition-colors font-medium text-base"
                   >
-                    {industry.name}
+                    {industry.name[locale]}
                   </Link>
                   {index < industries.length - 1 && (
                     <span className="text-gray-300 mx-4">|</span>

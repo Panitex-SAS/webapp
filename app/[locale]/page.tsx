@@ -3,13 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import {Link} from "../../i18n/routing";
 import Image from "next/image";
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 import ImageCarousel from "./components/ImageCarousel";
 import industriesData from "./data/industries.json";
 import type { Industry } from "./types";
 
 export default function Home() {
   const t = useTranslations('HomePage');
+  const locale = useLocale() as 'es' | 'en';
   const industries = industriesData as Industry[];
   const kpiRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -280,7 +281,7 @@ export default function Home() {
                   <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden">
                     <Image
                       src={industry.image}
-                      alt={industry.name}
+                      alt={industry.name[locale]}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                       className="object-cover"
@@ -289,13 +290,13 @@ export default function Home() {
                 )}
                 
                 <h3 className="text-xl font-semibold mb-3 text-red-600 transition-all duration-300 group-hover:underline decoration-red-600">
-                  {industry.name}
+                  {industry.name[locale]}
                 </h3>
                 
                 {/* Content that appears on hover (desktop) or is always visible (mobile) */}
                 <div className="max-h-96 opacity-100 md:max-h-0 md:opacity-0 md:group-hover:max-h-96 md:group-hover:opacity-100 transition-all duration-300 ease-in-out overflow-hidden">
                   <p className="text-gray-600 mb-4">
-                    {industry.description}
+                    {industry.description[locale]}
                   </p>
                   <span className="text-red-600 group-hover:text-red-700 group-hover:underline font-medium inline-flex items-center">
                     {t('industries.viewProjects')}
