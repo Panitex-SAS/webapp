@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import {Link} from "../../i18n/routing";
 import Image from "next/image";
+import {useTranslations} from 'next-intl';
 import ImageCarousel from "./components/ImageCarousel";
-import industriesData from "@/app/data/industries.json";
-import type { Industry } from "@/app/types";
+import industriesData from "./data/industries.json";
+import type { Industry } from "./types";
 
 export default function Home() {
+  const t = useTranslations('HomePage');
   const industries = industriesData as Industry[];
   const kpiRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -88,6 +90,7 @@ export default function Home() {
       clearInterval(timer3);
     };
   }, [isVisible]);
+
   return (
     <main className="min-h-screen">
       {/* Hero Section with Carousel */}
@@ -103,23 +106,23 @@ export default function Home() {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col items-start w-full px-4 md:px-8 md:pl-16 md:pr-8 max-w-full md:max-w-3xl pointer-events-none">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white drop-shadow-2xl leading-tight">
-            La infraestructura pública es una responsabilidad social
+            {t('hero.title')}
           </h1>
           <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 max-w-full md:max-w-2xl text-white drop-shadow-lg">
-            Construir una mejor sociedad es garantizar acceso, protección y comunicación en donde más se necesita
+            {t('hero.subtitle')}
           </p>
           <div className="flex gap-3 md:gap-4 flex-wrap">
             <Link
               href="/industrias"
               className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors shadow-lg pointer-events-auto"
             >
-              Nuestros proyectos
+              {t('hero.ourProjects')}
             </Link>
             <Link
               href="/contactanos"
               className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base border-2 border-white text-white rounded-lg hover:bg-white hover:text-red-600 transition-colors shadow-lg pointer-events-auto"
             >
-              Contáctanos
+              {t('hero.contactUs')}
             </Link>
           </div>
         </div>
@@ -131,19 +134,19 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image Section - Left */}
             <div className="w-full lg:w-1/2">
-              <h2 className="text-4xl font-bold text-red-600 mb-3">Alcance Territorial</h2>
-              <h3 className="text-2xl font-semibold text-gray-700 mb-6">Impacto en comunidades indígenas</h3>
+              <h2 className="text-4xl font-bold text-red-600 mb-3">{t('territorial.title')}</h2>
+              <h3 className="text-2xl font-semibold text-gray-700 mb-6">{t('territorial.subtitle')}</h3>
               <div className="relative w-full h-125 rounded-lg overflow-hidden shadow-xl mb-6">
                 <Image
                   src="/images/home/alcance_territorial.png"
-                  alt="Alcance Territorial Panitex"
+                  alt={t('territorial.title')}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
               <p className="text-lg text-red-600 leading-relaxed">
-                <b>Panitex</b> ha implementado en <b><i>177 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>358 embarcaciones</b>, <b>429 motores</b> y más de <b>17,500 accesorios</b>.
+                <b>Panitex</b> {t('territorial.description')}
               </p>
             </div>
 
@@ -153,7 +156,7 @@ export default function Home() {
                 {/* KPI 1 */}
                 <div className={`text-center lg:text-left transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                   <div className="text-6xl md:text-7xl font-bold text-red-600 mb-3">{count1.toLocaleString()}</div>
-                  <p className="text-xl text-gray-700">Comunidades Indígenas Alcanzadas</p>
+                  <p className="text-xl text-gray-700">{t('territorial.communities')}</p>
                 </div>
 
                 {/* Separator */}
@@ -162,7 +165,7 @@ export default function Home() {
                 {/* KPI 2 */}
                 <div className={`text-center lg:text-left transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                   <div className="text-6xl md:text-7xl font-bold text-red-600 mb-3">{count2.toLocaleString()}</div>
-                  <p className="text-xl text-gray-700">Contratos Públicos Ejecutados</p>
+                  <p className="text-xl text-gray-700">{t('territorial.contracts')}</p>
                 </div>
 
                 {/* Separator */}
@@ -171,7 +174,7 @@ export default function Home() {
                 {/* KPI 3 */}
                 <div className={`text-center lg:text-left transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                   <div className="text-6xl md:text-7xl font-bold text-red-600 mb-3">{count3.toLocaleString()}</div>
-                  <p className="text-xl text-gray-700">Elementos de Dotaciones Especializadas Entregadas</p>
+                  <p className="text-xl text-gray-700">{t('territorial.elements')}</p>
                 </div>
               </div>
             </div>
@@ -183,24 +186,24 @@ export default function Home() {
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-red-600 mb-4">
-            ¿Por qué trabajar con Panitex?
+            {t('whyPanitex.title')}
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold mb-6">
-            Ejecutamos con excelencia.
+            {t('whyPanitex.subtitle')}
           </h3>
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.
+            {t('whyPanitex.description')}
           </p>
           <Link
             href="/nosotros/proposito-valores"
             className="inline-flex items-center text-red-600 hover:underline transition-all">
-            Aprende de nuestro propósito y valores
+            {t('whyPanitex.learnMore')}
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
           <h3 className="text-2xl md:text-2xl font-bold italic mt-10 mb-6">
-            Aliado confiable del Sector Público
+            {t('whyPanitex.trustedPartner')}
           </h3>
           
           {/* Scrolling Logos */}
@@ -263,7 +266,7 @@ export default function Home() {
       <section className="py-16 px-8 bg-gray-50 relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
-            Sistemas de Desarrollo Social
+            {t('industries.title')}
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
             {industries.map((industry) => (
@@ -285,7 +288,7 @@ export default function Home() {
                   </div>
                 )}
                 
-                <h3 className="text-xl font-semibold mb-3 text-red-600 transition-all duration-300">
+                <h3 className="text-xl font-semibold mb-3 text-red-600 transition-all duration-300 group-hover:underline decoration-red-600">
                   {industry.name}
                 </h3>
                 
@@ -295,7 +298,7 @@ export default function Home() {
                     {industry.description}
                   </p>
                   <span className="text-red-600 group-hover:text-red-700 group-hover:underline font-medium inline-flex items-center">
-                    Ver proyectos
+                    {t('industries.viewProjects')}
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

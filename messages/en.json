@@ -1,0 +1,110 @@
+{
+  "Header": {
+    "inicio": "Home",
+    "nosotros": "About Us",
+    "sistemas": "Social Development Systems",
+    "contactanos": "Contact Us"
+  },
+  "Footer": {
+    "description": "Leaders in industrial solutions and social development systems. Real impact on indigenous communities in Colombia.",
+    "quickLinks": "Quick Links",
+    "systems": "Systems",
+    "contact": "Contact",
+    "inicio": "Home",
+    "ceo": "Our CEO",
+    "historia": "History",
+    "purposeValues": "Purpose & Values",
+    "contactUs": "Contact Us",
+    "allRightsReserved": "All rights reserved",
+    "values": "Values"
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Public infrastructure is a social responsibility",
+      "subtitle": "Building a better society means ensuring access, protection, and communication where it's needed most",
+      "ourProjects": "Our projects",
+      "contactUs": "Contact Us"
+    },
+    "territorial": {
+      "title": "Territorial Reach",
+      "subtitle": "Impact on indigenous communities",
+      "description": "Panitex has implemented projects in 177 communities for differentiated approach supplies, delivering 358 boats, 429 motors, and more than 17,500 accessories.",
+      "communities": "Indigenous Communities Reached",
+      "contracts": "Public Contracts Executed",
+      "elements": "Specialized Supply Elements Delivered"
+    },
+    "whyPanitex": {
+      "title": "Why work with Panitex?",
+      "subtitle": "We execute with excellence.",
+      "description": "Serving the public sector requires more than products: it demands execution capacity, reliability, and accountability. At Panitex, we understand excellence as the ability to deliver in complex contexts, where logistics are demanding, access is limited, and every decision has real impact on communities and institutions.",
+      "learnMore": "Learn about our purpose and values",
+      "trustedPartner": "Trusted Partner of the Public Sector"
+    },
+    "industries": {
+      "title": "Social Development Systems",
+      "viewProjects": "View projects"
+    }
+  },
+  "Industries": {
+    "title": "Social Development Systems",
+    "description": "Comprehensive solutions for public infrastructure development",
+    "projects": "Projects",
+    "noProjects": "No projects available",
+    "backToIndustries": "Back to Systems"
+  },
+  "Nosotros": {
+    "ceo": "Our CEO",
+    "historia": "History",
+    "purposeValues": "Purpose & Values"
+  },
+  "CEO": {
+    "title": "Rene Silva - CEO",
+    "role": "Founder and Chief Executive Officer",
+    "description": "With over 20 years of experience in the industrial sector, Rene Silva has led the transformation of Panitex into a leading company in solutions for social development and public infrastructure in Colombia."
+  },
+  "Historia": {
+    "title": "Our History",
+    "subtitle": "A journey of dedication and commitment"
+  },
+  "PurposeValues": {
+    "title": "Purpose and Values",
+    "purpose": "Purpose",
+    "purposeText": "Our purpose is to contribute to the social development of Colombia by providing public infrastructure solutions that generate positive impact on the most needy communities.",
+    "values": "Values",
+    "excellence": "Excellence",
+    "excellenceText": "We pursue excellence in every project, delivering the highest quality solutions.",
+    "responsibility": "Responsibility",
+    "responsibilityText": "We assume our social responsibility with commitment and dedication.",
+    "integrity": "Integrity",
+    "integrityText": "We act with transparency and ethics in all our operations.",
+    "innovation": "Innovation",
+    "innovationText": "We constantly innovate to offer the best solutions."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "nameLabel": "Full name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "john@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+57 300 123 4567",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us about your project or inquiry...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "successTitle": "Message sent!",
+    "successMessage": "Thank you for contacting us. We'll respond soon.",
+    "errorTitle": "Error sending",
+    "errorMessage": "There was a problem. Please try again.",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "messageRequired": "Message is required",
+    "contactInfo": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Bogotá, Colombia"
+  }
+}

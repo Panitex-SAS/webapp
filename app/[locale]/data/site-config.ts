@@ -27,7 +27,7 @@ export const siteConfig = {
   },
   
   // Industries data (imported from industries.json)
-  industriesPath: "@/app/data/industries.json",
+  industriesPath: "../data/industries.json",
   
   // Copyright information
   copyright: `© ${new Date().getFullYear()} Panitex. Todos los derechos reservados.`,

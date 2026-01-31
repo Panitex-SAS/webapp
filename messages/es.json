@@ -1,0 +1,110 @@
+{
+  "Header": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "sistemas": "Sistemas de Desarrollo Social",
+    "contactanos": "Contáctanos"
+  },
+  "Footer": {
+    "description": "Líderes en soluciones industriales y sistemas de desarrollo social. Impacto real en comunidades indígenas de Colombia.",
+    "quickLinks": "Enlaces Rápidos",
+    "systems": "Sistemas",
+    "contact": "Contacto",
+    "inicio": "Inicio",
+    "ceo": "Nuestro CEO",
+    "historia": "Historia",
+    "purposeValues": "Propósito y Valores",
+    "contactUs": "Contáctanos",
+    "allRightsReserved": "Todos los derechos reservados",
+    "values": "Valores"
+  },
+  "HomePage": {
+    "hero": {
+      "title": "La infraestructura pública es una responsabilidad social",
+      "subtitle": "Construir una mejor sociedad es garantizar acceso, protección y comunicación en donde más se necesita",
+      "ourProjects": "Nuestros proyectos",
+      "contactUs": "Contáctanos"
+    },
+    "territorial": {
+      "title": "Alcance Territorial",
+      "subtitle": "Impacto en comunidades indígenas",
+      "description": "Panitex ha implementado en 177 comunidades para dotaciones de enfoque diferencial, en donde se han entregado 358 embarcaciones, 429 motores y más de 17,500 accesorios.",
+      "communities": "Comunidades Indígenas Alcanzadas",
+      "contracts": "Contratos Públicos Ejecutados",
+      "elements": "Elementos de Dotaciones Especializadas Entregadas"
+    },
+    "whyPanitex": {
+      "title": "¿Por qué trabajar con Panitex?",
+      "subtitle": "Ejecutamos con excelencia.",
+      "description": "Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.",
+      "learnMore": "Aprende de nuestro propósito y valores",
+      "trustedPartner": "Aliado confiable del Sector Público"
+    },
+    "industries": {
+      "title": "Sistemas de Desarrollo Social",
+      "viewProjects": "Ver proyectos"
+    }
+  },
+  "Industries": {
+    "title": "Sistemas de Desarrollo Social",
+    "description": "Soluciones integrales para el desarrollo de infraestructura pública",
+    "projects": "Proyectos",
+    "noProjects": "No hay proyectos disponibles",
+    "backToIndustries": "Volver a Sistemas"
+  },
+  "Nosotros": {
+    "ceo": "Nuestro CEO",
+    "historia": "Historia",
+    "purposeValues": "Propósito y Valores"
+  },
+  "CEO": {
+    "title": "Rene Silva - CEO",
+    "role": "Fundador y Director Ejecutivo",
+    "description": "Con más de 20 años de experiencia en el sector industrial, Rene Silva ha liderado la transformación de Panitex en una empresa líder en soluciones para el desarrollo social e infraestructura pública en Colombia."
+  },
+  "Historia": {
+    "title": "Nuestra Historia",
+    "subtitle": "Un recorrido de dedicación y compromiso"
+  },
+  "PurposeValues": {
+    "title": "Propósito y Valores",
+    "purpose": "Propósito",
+    "purposeText": "Nuestro propósito es contribuir al desarrollo social de Colombia mediante la provisión de soluciones de infraestructura pública que generen impacto positivo en las comunidades más necesitadas.",
+    "values": "Valores",
+    "excellence": "Excelencia",
+    "excellenceText": "Buscamos la excelencia en cada proyecto, entregando soluciones de la más alta calidad.",
+    "responsibility": "Responsabilidad",
+    "responsibilityText": "Asumimos nuestra responsabilidad social con compromiso y dedicación.",
+    "integrity": "Integridad",
+    "integrityText": "Actuamos con transparencia y ética en todas nuestras operaciones.",
+    "innovation": "Innovación",
+    "innovationText": "Innovamos constantemente para ofrecer las mejores soluciones."
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "phoneLabel": "Teléfono",
+    "phonePlaceholder": "+57 300 123 4567",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre tu proyecto o consulta...",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successMessage": "Gracias por contactarnos. Te responderemos pronto.",
+    "errorTitle": "Error al enviar",
+    "errorMessage": "Hubo un problema. Por favor intenta de nuevo.",
+    "nameRequired": "El nombre es requerido",
+    "emailRequired": "El correo electrónico es requerido",
+    "emailInvalid": "Correo electrónico inválido",
+    "messageRequired": "El mensaje es requerido",
+    "contactInfo": "Información de Contacto",
+    "phone": "Teléfono",
+    "email": "Email",
+    "location": "Ubicación",
+    "locationValue": "Bogotá, Colombia"
+  }
+}

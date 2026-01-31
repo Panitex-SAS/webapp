@@ -2,8 +2,8 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import nosotrosData from "@/app/data/nosotros.json";
-import Breadcrumb from "@/app/components/Breadcrumb";
+import nosotrosData from "../../data/nosotros.json";
+import Breadcrumb from "../../components/Breadcrumb";
 
 interface NosotrosSection {
   id: string;

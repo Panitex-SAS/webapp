@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import industriesData from "@/app/data/industries.json";
-import type { Industry } from "@/app/types";
-import Breadcrumb from "@/app/components/Breadcrumb";
+import industriesData from "../data/industries.json";
+import type { Industry } from "../types";
+import Breadcrumb from "../components/Breadcrumb";
 
 export default function IndustriasPage() {
   const industries = industriesData as Industry[];

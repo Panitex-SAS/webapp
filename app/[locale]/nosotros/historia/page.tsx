@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import nosotrosData from "@/app/data/nosotros.json";
-import Breadcrumb from "@/app/components/Breadcrumb";
+import nosotrosData from "../../data/nosotros.json";
+import Breadcrumb from "../../components/Breadcrumb";
 import { useEffect, useRef } from "react";
 
 interface NosotrosSection {
