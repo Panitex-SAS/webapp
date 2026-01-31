@@ -2,10 +2,14 @@
 
 import {Link} from "../../../i18n/routing";
 import Image from "next/image";
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
+import industriesData from "@locale/data/industries.json";
+import type { Industry } from "@locale/types";
 
 export default function Footer() {
   const t = useTranslations('Footer');
+  const locale = useLocale() as 'es' | 'en';
+  const industries = industriesData as Industry[];
   
   return (
     <footer className="bg-gray-900 text-white mt-auto">
@@ -62,28 +66,20 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-red-500 mb-4">{t('systems')}</h4>
+            <h4 className="text-lg font-semibold text-red-500 mb-4">
+              {locale === 'es' ? 'Sistemas de Desarrollo Social' : 'Social Development Systems'}
+            </h4>
             <ul className="space-y-2">
-              <li>
-                <Link href="/industrias/transporte-maritimo-fluvial" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
-                  Transporte Marítimo y Fluvial
-                </Link>
-              </li>
-              <li>
-                <Link href="/industrias/comunicaciones" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
-                  Comunicaciones
-                </Link>
-              </li>
-              <li>
-                <Link href="/industrias/proteccion" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
-                  Protección
-                </Link>
-              </li>
-              <li>
-                <Link href="/industrias/dotacion-especializada" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
-                  Dotación Especializada
-                </Link>
-              </li>
+              {industries.map((industry) => (
+                <li key={industry.id}>
+                  <Link 
+                    href={`/industrias/${industry.id}`} 
+                    className="text-gray-400 hover:text-red-400 transition-colors text-sm"
+                  >
+                    {industry.name[locale]}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
