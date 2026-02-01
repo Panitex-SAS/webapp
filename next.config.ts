@@ -57,10 +57,67 @@ const nextConfig: NextConfig = {
   // Redirects
   async redirects() {
     return [
+      // cPanel access
       {
         source: '/cpanel',
         destination: 'http://50.87.7.74:2083',
         permanent: false,
+      },
+      
+      // Redirect root to default Spanish locale (temporary for flexibility)
+      {
+        source: '/',
+        destination: '/es',
+        permanent: false,
+      },
+      
+      // Redirect old nosotros section pages to Spanish locale
+      {
+        source: '/nosotros',
+        destination: '/es/nosotros',
+        permanent: true,
+      },
+      {
+        source: '/nosotros/ceo',
+        destination: '/es/nosotros/ceo',
+        permanent: true,
+      },
+      {
+        source: '/nosotros/historia',
+        destination: '/es/nosotros/historia',
+        permanent: true,
+      },
+      {
+        source: '/nosotros/proposito-valores',
+        destination: '/es/nosotros/proposito-valores',
+        permanent: true,
+      },
+      
+      // Redirect old industry pages to Spanish locale
+      {
+        source: '/industrias',
+        destination: '/es/industrias',
+        permanent: true,
+      },
+      {
+        source: '/industrias/:id',
+        destination: '/es/industrias/:id',
+        permanent: true,
+      },
+      
+      // Redirect old contact page to Spanish locale
+      {
+        source: '/contactanos',
+        destination: '/es/contactanos',
+        permanent: true,
+      },
+      
+      // Catch-all: redirect any other old URLs without locale to Spanish
+      // Excludes: locale paths (es/en), Next.js internals, static files, API routes
+      {
+        source: '/:path((?!es|en|_next|static|favicon.ico|robots.txt|sitemap.xml|api).*)',
+        destination: '/es/:path*',
+        permanent: true,
       },
     ];
   },
