@@ -88,6 +88,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/quienes-somos.php',
+        destination: '/es/nosotros/ceo',
+        permanent: true,
+      },
+      {
+        source: '/es/quienes-somos.php',
+        destination: '/es/nosotros/ceo',
+        permanent: true,
+      },
+      {
         source: '/nosotros/ceo',
         destination: '/es/nosotros/ceo',
         permanent: true,
