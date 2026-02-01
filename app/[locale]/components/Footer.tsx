@@ -1,6 +1,6 @@
 "use client";
 
-import {Link} from "../../../i18n/routing";
+import {Link} from "@/i18n/routing";
 import Image from "next/image";
 import {useTranslations, useLocale} from 'next-intl';
 import industriesData from "@locale/data/industries.json";

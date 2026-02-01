@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import {Link} from "../../../../i18n/routing";
+import {Link} from "@/i18n/routing";
 import {useLocale, useTranslations} from 'next-intl';
 import nosotrosData from "@locale/data/nosotros.json";
 import type { LocalizedString } from "@locale/types";
@@ -94,7 +94,13 @@ export default function PropositoValoresPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">{t('sections.service.title')}</h2>
               <p className="text-lg md:text-xl italic text-gray-500 mb-4 md:mb-6">{t('sections.service.subtitle')}</p>
               <div className="text-base md:text-lg text-gray-600 space-y-3 md:space-y-4 leading-relaxed">
-                <p dangerouslySetInnerHTML={{ __html: t('sections.service.content1') }} />
+                <p>
+                  {t.rich('sections.service.content1', {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
+                </p>
                 <p>{t('sections.service.content2')}</p>
               </div>
             </section>

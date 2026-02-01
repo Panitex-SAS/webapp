@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {Link} from "../../i18n/routing";
+import {Link} from "@/i18n/routing";
 import Image from "next/image";
 import {useTranslations, useLocale} from 'next-intl';
 import ImageCarousel from "@locale/components/ImageCarousel";

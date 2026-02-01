@@ -1,12 +1,12 @@
 import { MetadataRoute } from 'next';
+import industries from '@locale/data/industries.json';
 
-// Hardcode the industries for the sitemap since we can't dynamically import from [locale]
-const industries = [
-  { id: 'transporte-maritimo-fluvial' },
-  { id: 'comunicaciones' },
-  { id: 'proteccion' },
-  { id: 'dotacion-especializada' }
-];
+type Industry = {
+  id: string;
+  name: { es: string; en: string };
+  description: { es: string; en: string };
+  image: string;
+};
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://panitex.com.co';
@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
     
     // Dynamic industry pages
-    industries.forEach(industry => {
+    industries.forEach((industry: Industry) => {
       staticPages.push({
         url: `${baseUrl}/${locale}/industrias/${industry.id}`,
         lastModified: new Date(),

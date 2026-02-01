@@ -83,8 +83,18 @@ export default function CEOPage() {
               <p>
                 {t('principle')}
               </p>
-              <p dangerouslySetInnerHTML={{ __html: t('formation') }} />
-              <p dangerouslySetInnerHTML={{ __html: t('international') }} />
+              <p>
+                {t.rich('formation', {
+                  b: (chunks) => <strong>{chunks}</strong>,
+                  br: () => <br />,
+                })}
+              </p>
+              <p>
+                {t.rich('international', {
+                  b: (chunks) => <strong>{chunks}</strong>,
+                  br: () => <br />,
+                })}
+              </p>
               <p>
                 {t('leadership')}
               </p>

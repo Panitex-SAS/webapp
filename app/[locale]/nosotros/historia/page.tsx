@@ -1,6 +1,6 @@
 "use client";
 
-import {Link} from "../../../../i18n/routing";
+import {Link} from "@/i18n/routing";
 import {useLocale, useTranslations} from 'next-intl';
 import nosotrosData from "@locale/data/nosotros.json";
 import type { LocalizedString } from "@locale/types";

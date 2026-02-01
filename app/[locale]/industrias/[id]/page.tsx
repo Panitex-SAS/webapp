@@ -1,4 +1,4 @@
-import {Link} from "../../../../i18n/routing";
+import {Link} from "@/i18n/routing";
 import Image from "next/image";
 import { getTranslations } from 'next-intl/server';
 import industriesData from "@locale/data/industries.json";

@@ -1,6 +1,6 @@
 [
   {
-    "id": "Transporte-marítimo-contrato-1044-2022",
+    "id": "transporte_maritimo_contrato_1044_2022",
     "industryId": "transporte_maritimo_y_fluvial",
     "name": {
       "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1044 de 2022",
@@ -15,7 +15,7 @@
     "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.2938808&isFromPublicArea=True&isModal=true&asPopupView=true"
   },
   {
-    "id": "Transporte-marítimo-contrato-1045-2020",
+    "id": "transporte_maritimo_contrato_1045_2020",
     "industryId": "transporte_maritimo_y_fluvial",
     "name": {
       "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1045 de 2020",
@@ -30,7 +30,7 @@
     "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1465478&isFromPublicArea=True&isModal=true&asPopupView=true"
   },
   {
-    "id": "Transporte-marítimo-contrato-1096-2020",
+    "id": "transporte_maritimo_contrato_1096_2020",
     "industryId": "transporte_maritimo_y_fluvial",
     "name": {
       "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1096 de 2020",
@@ -45,7 +45,7 @@
     "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1503172&isFromPublicArea=True&isModal=true&asPopupView=true"
   },
   {
-    "id": "Transporte-marítimo-contrato-1411-2022",
+    "id": "transporte_maritimo_contrato_1411_2022",
     "industryId": "transporte_maritimo_y_fluvial",
     "name": {
       "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1411 de 2022 (Ejecutado en UT)",
@@ -60,7 +60,7 @@
     "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.3449531&isFromPublicArea=True&isModal=true&asPopupView=true"
   },
   {
-    "id": "Transporte-marítimo-contrato-2078-2024",
+    "id": "transporte_maritimo_contrato_2078_2024",
     "industryId": "transporte_maritimo_y_fluvial",
     "name": {
       "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 2078 de 2024 (Ejecutado en UT)",
@@ -75,7 +75,7 @@
     "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.6357924&isFromPublicArea=True&isModal=true&asPopupView=true"
   },
   {
-    "id": "Transporte-marítimo-contrato-962-2019",
+    "id": "transporte_maritimo_contrato_962_2019",
     "industryId": "transporte_maritimo_y_fluvial",
     "name": {
       "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 962 de 2019",
@@ -137,8 +137,8 @@
   },
 
   {
-    "id": "dotaciones-especializadas-contrato-649-2018",
-    "industryId": "Dotaciones-especializadas",
+    "id": "dotaciones_especializadas_contrato_649_2018",
+    "industryId": "dotaciones_especializadas",
     "name": {
       "es": "Enfoque diferencial (Dotaciones especializadas) — Contrato 649 de 2018",
       "en": "Differential Approach (Specialized Equipment) — Contract 649 of 2018"
@@ -152,8 +152,8 @@
     "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.540213&isFromPublicArea=True&isModal=true&asPopupView=true"
   },
   {
-    "id": "dotaciones-especializadas-contrato-963-2019",
-    "industryId": "Dotaciones-especializadas",
+    "id": "dotaciones_especializadas_contrato_963_2019",
+    "industryId": "dotaciones_especializadas",
     "name": {
       "es": "Enfoque diferencial (Dotaciones especializadas) — Contrato 963 de 2019",
       "en": "Differential Approach (Specialized Equipment) — Contract 963 of 2019"
