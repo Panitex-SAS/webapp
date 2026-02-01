@@ -10,6 +10,19 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
+    unoptimized: false,
+  },
+
+  // Rewrites for images to bypass locale routing
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/:locale(es|en)/images/:path*',
+          destination: '/images/:path*',
+        },
+      ],
+    };
   },
 
   // Security headers
@@ -110,9 +123,9 @@ const nextConfig: NextConfig = {
       },
       
       // Catch-all: redirect any other old URLs without locale to Spanish
-      // Excludes: locale paths (es/en), Next.js internals, static files, API routes
+      // Excludes: locale paths (es/en), Next.js internals, static files, API routes, images
       {
-        source: '/:path((?!es|en|_next|static|favicon.ico|robots.txt|sitemap.xml|api).*)',
+        source: '/:path((?!es|en|_next|static|favicon.ico|robots.txt|sitemap.xml|api|images).*)',
         destination: '/es/:path*',
         permanent: true,
       },
