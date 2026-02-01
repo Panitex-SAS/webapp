@@ -2,9 +2,12 @@
 
 import { useState, FormEvent } from "react";
 import Image from "next/image";
+import {useTranslations, useLocale} from 'next-intl';
 import Breadcrumb from "@locale/components/Breadcrumb";
 
 export default function ContactanosPage() {
+  const t = useTranslations('Contact');
+  const locale = useLocale() as 'es' | 'en';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,31 +32,31 @@ export default function ContactanosPage() {
 
     // Name validation
     if (!formData.name.trim()) {
-      newErrors.name = 'El nombre es requerido';
+      newErrors.name = t('nameRequired');
       isValid = false;
     } else if (formData.name.trim().length < 2) {
-      newErrors.name = 'El nombre debe tener al menos 2 caracteres';
+      newErrors.name = t('nameRequired');
       isValid = false;
     }
 
     // Email validation
     if (!formData.email.trim()) {
-      newErrors.email = 'El email es requerido';
+      newErrors.email = t('emailRequired');
       isValid = false;
     } else {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(formData.email)) {
-        newErrors.email = 'Email inválido';
+        newErrors.email = t('emailInvalid');
         isValid = false;
       }
     }
 
     // Message validation
     if (!formData.message.trim()) {
-      newErrors.message = 'El mensaje es requerido';
+      newErrors.message = t('messageRequired');
       isValid = false;
     } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'El mensaje debe tener al menos 10 caracteres';
+      newErrors.message = t('messageRequired');
       isValid = false;
     }
 
@@ -85,16 +88,16 @@ export default function ContactanosPage() {
 
       if (response.ok) {
         setSubmitStatus('success');
-        setStatusMessage('¡Mensaje enviado exitosamente! Nos pondremos en contacto pronto.');
+        setStatusMessage(t('successMessage'));
         setFormData({ name: '', email: '', message: '' });
         setErrors({ name: '', email: '', message: '' });
       } else {
         setSubmitStatus('error');
-        setStatusMessage(data.error || 'Error al enviar el mensaje. Por favor intenta de nuevo.');
+        setStatusMessage(data.error || t('errorMessage'));
       }
     } catch {
       setSubmitStatus('error');
-      setStatusMessage('Error al enviar el mensaje. Por favor intenta de nuevo.');
+      setStatusMessage(t('errorMessage'));
     } finally {
       setIsSubmitting(false);
     }
@@ -112,8 +115,8 @@ export default function ContactanosPage() {
   return (
     <main className="min-h-screen">
       <Breadcrumb items={[
-        { label: "Inicio", href: "/" },
-        { label: "Contáctanos" }
+        { label: locale === 'es' ? "Inicio" : "Home", href: "/" },
+        { label: t('title') }
       ]} />
       
       {/* Hero Section with Background Image */}
@@ -135,7 +138,7 @@ export default function ContactanosPage() {
         
         {/* Title */}
         <h1 className="relative z-10 text-4xl md:text-6xl font-bold text-white drop-shadow-2xl px-4 md:px-8 md:pl-16">
-          Contáctanos
+          {t('title')}
         </h1>
       </section>
 
@@ -143,14 +146,14 @@ export default function ContactanosPage() {
       <section className="py-12 md:py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-3">Ponte en contacto</h2>
-            <p className="text-base md:text-lg text-gray-600">Estamos aquí para ayudarte con tus proyectos</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-3">{t('title')}</h2>
+            <p className="text-base md:text-lg text-gray-600">{t('subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             {/* Contact Info Card */}
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Información de Contacto</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">{t('contactInfo')}</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
@@ -160,7 +163,7 @@ export default function ContactanosPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Email</p>
+                    <p className="text-sm text-gray-500 mb-1">{t('email')}</p>
                     <a href="mailto:rene.silva@panitex.com.co" className="text-gray-800 hover:text-red-600 transition-colors font-medium">rene.silva@panitex.com.co</a>
                   </div>
                 </div>
@@ -172,7 +175,7 @@ export default function ContactanosPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Teléfono</p>
+                    <p className="text-sm text-gray-500 mb-1">{t('phone')}</p>
                     <a href="tel:+573158522816" className="text-gray-800 hover:text-red-600 transition-colors font-medium">+57 315 852 2816</a>
                   </div>
                 </div>
@@ -185,23 +188,23 @@ export default function ContactanosPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Ubicación</p>
-                    <p className="text-gray-800 font-medium">Bogotá, Colombia</p>
+                    <p className="text-sm text-gray-500 mb-1">{t('location')}</p>
+                    <p className="text-gray-800 font-medium">{t('locationValue')}</p>
                   </div>
                 </div>
               </div>
               
               <div className="pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Nuestro equipo está listo para atender tus necesidades en proyectos de infraestructura pública y desarrollo social.
+                  {locale === 'es' ? 'Nuestro equipo está listo para atender tus necesidades en proyectos de infraestructura pública y desarrollo social.' : 'Our team is ready to assist with your public infrastructure and social development project needs.'}
                 </p>
               </div>
             </div>
 
             {/* Contact Form Card */}
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Envíanos un mensaje</h3>
-              <form onSubmit={handleSubmit} className="space-y-5" aria-label="Formulario de contacto">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">{locale === 'es' ? 'Envíanos un mensaje' : 'Send us a message'}</h3>
+              <form onSubmit={handleSubmit} className="space-y-5" aria-label={locale === 'es' ? 'Formulario de contacto' : 'Contact form'}>
                 {/* Status Messages */}
                 {submitStatus === 'success' && (
                   <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -216,13 +219,13 @@ export default function ContactanosPage() {
 
                 <div>
                   <label htmlFor="contact-name" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nombre completo
+                    {t('nameLabel')}
                   </label>
                   <input 
                     id="contact-name"
                     name="name"
                     type="text" 
-                    placeholder="Tu nombre completo"
+                    placeholder={t('namePlaceholder')}
                     value={formData.name}
                     onChange={handleChange}
                     className={`w-full px-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all ${errors.name ? 'border-red-500 bg-red-50' : 'border-gray-200 hover:border-gray-300'}`}
@@ -240,13 +243,13 @@ export default function ContactanosPage() {
                 </div>
                 <div>
                   <label htmlFor="contact-email" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Correo electrónico
+                    {t('emailLabel')}
                   </label>
                   <input 
                     id="contact-email"
                     name="email"
                     type="email" 
-                    placeholder="tu@email.com"
+                    placeholder={t('emailPlaceholder')}
                     value={formData.email}
                     onChange={handleChange}
                     className={`w-full px-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all ${errors.email ? 'border-red-500 bg-red-50' : 'border-gray-200 hover:border-gray-300'}`}
@@ -264,12 +267,12 @@ export default function ContactanosPage() {
                 </div>
                 <div>
                   <label htmlFor="contact-message" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Mensaje
+                    {t('messageLabel')}
                   </label>
                   <textarea 
                     id="contact-message"
                     name="message"
-                    placeholder="Cuéntanos sobre tu proyecto o consulta..." 
+                    placeholder={t('messagePlaceholder')} 
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
@@ -298,11 +301,11 @@ export default function ContactanosPage() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span>Enviando...</span>
+                      <span>{t('sending')}</span>
                     </>
                   ) : (
                     <>
-                      <span>Enviar mensaje</span>
+                      <span>{t('send')}</span>
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
