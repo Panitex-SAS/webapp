@@ -1,19 +1,19 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import createMiddleware from 'next-intl/middleware';
+import {routing} from './i18n/routing';
+import {NextRequest, NextResponse} from 'next/server';
 
-export function proxy(request: NextRequest) {
-  const response = NextResponse.next();
+const intlMiddleware = createMiddleware(routing);
 
-  // Add security headers for API routes
-  if (request.nextUrl.pathname.startsWith('/api/')) {
-    response.headers.set('X-Content-Type-Options', 'nosniff');
-    response.headers.set('X-Frame-Options', 'DENY');
-    response.headers.set('X-XSS-Protection', '1; mode=block');
-  }
+export default function middleware(request: NextRequest): NextResponse {
+  const response = intlMiddleware(request);
+
+  response.headers.set('X-Content-Type-Options', 'nosniff');
+  response.headers.set('X-Frame-Options', 'SAMEORIGIN');
+  response.headers.set('X-XSS-Protection', '1; mode=block');
 
   return response;
 }
-
 export const config = {
-  matcher: '/api/:path*',
+  // Match only internationalized pathnames
+  matcher: ['/', '/(es|en)/:path*']
 };

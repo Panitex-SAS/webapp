@@ -1,0 +1,183 @@
+{
+  "Header": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "sistemas": "Sistemas de Desarrollo Social",
+    "contactanos": "Contáctanos"
+  },
+  "Footer": {
+    "description": "Líderes en soluciones industriales y sistemas de desarrollo social. Impacto real en comunidades indígenas de Colombia.",
+    "quickLinks": "Enlaces Rápidos",
+    "systems": "Sistemas",
+    "contact": "Contacto",
+    "inicio": "Inicio",
+    "ceo": "Nuestro CEO",
+    "historia": "Historia",
+    "purposeValues": "Propósito y Valores",
+    "contactUs": "Contáctanos",
+    "allRightsReserved": "Todos los derechos reservados",
+    "values": "Valores"
+  },
+  "HomePage": {
+    "hero": {
+      "title": "La Infraestructura Pública es una Responsabilidad Social",
+      "subtitle": "Construir una mejor sociedad es garantizar acceso, protección y comunicación en donde más se necesita",
+      "ourProjects": "Nuestros proyectos",
+      "contactUs": "Contáctanos"
+    },
+    "territorial": {
+      "title": "Alcance Territorial",
+      "subtitle": "Impacto en comunidades indígenas",
+      "description": "ha implementado en <b><i>177 comunidades</i></b> para dotaciones de enfoque diferencial, en donde se han entregado <b>358 embarcaciones</b>, <b>429 motores</b> y más de <b>17,500 accesorios</b>.",
+      "communities": "Comunidades Indígenas Alcanzadas",
+      "contracts": "Contratos Públicos Ejecutados",
+      "elements": "Elementos de Dotaciones Especializadas Entregadas"
+    },
+    "whyPanitex": {
+      "title": "¿Por qué trabajar con Panitex?",
+      "subtitle": "Ejecutamos con excelencia.",
+      "description": "Servir al sector público exige más que productos: requiere capacidad de ejecución, confiabilidad y responsabilidad. En Panitex entendemos la excelencia como la habilidad de cumplir en contextos complejos, donde la logística es exigente, el acceso es limitado y cada decisión tiene impacto real sobre comunidades e instituciones.",
+      "learnMore": "Aprende de nuestro propósito y valores",
+      "trustedPartner": "Aliado confiable del Sector Público"
+    },
+    "industries": {
+      "title": "Sistemas de Desarrollo Social",
+      "viewProjects": "Ver proyectos"
+    }
+  },
+  "Industries": {
+    "title": "Sistemas de Desarrollo Social",
+    "description": "Soluciones integrales para el desarrollo de infraestructura pública",
+    "projects": "Proyectos",
+    "noProjects": "No hay proyectos disponibles",
+    "backToIndustries": "Volver a Sistemas"
+  },
+  "Nosotros": {
+    "ceo": "Nuestro CEO",
+    "historia": "Historia",
+    "purposeValues": "Propósito y Valores"
+  },
+  "CEO": {
+    "title": "Nuestro CEO",
+    "name": "René Silva",
+    "role": "Fundador y CEO",
+    "intro": "René Silva lidera hoy a Panitex como su fundador y CEO, dirigiendo la estrategia y la ejecución de proyectos de alta complejidad para el sector público. Con más de 30 años de experiencia en contratación pública y privada, ha sido responsable de la ejecución de más de 60 contratos públicos, además de atender a 177 comunidades indígenas tras la integración de movilidad fluvial y marítima, protección, comunicaciones y dotaciones especializadas en territorios de difícil acceso.",
+    "principle": "El principio rector de René sigue siendo el mismo que ha guiado toda su trayectoria: \"Ser confiables, siempre\". Para él, liderar Panitex significa asumir que cada contrato ejecutado impacta vidas, instituciones y comunidades. Por eso, la confianza no es solo un valor corporativo: es la base sobre la cual se construyen relaciones duraderas con el Estado, proveedores y con los territorios que más lo necesitan.",
+    "formation": "Formado en el sector textil desde sus cimientos, René Silva desarrolló su carrera entendiendo que la confianza no es un discurso, sino un resultado. Su experiencia abarcó toda la cadena productiva textil y la dirección de equipos comerciales en compañías líderes del país. Este recorrido le permitió comprender cómo estructurar operaciones eficientes, cumplir estándares técnicos exigentes y responder con precisión a contratos de alta responsabilidad institucional.",
+    "international": "A esta experiencia se suma una amplia exposición internacional a lo largo de su carrera empresarial, que ha permitido a René desarrollar una capacidad de reconocimiento de patrones operativos, culturales y logísticos. Esta habilidad le ha facilitado adaptar soluciones, anticipar riesgos y tomar decisiones informadas en contextos diversos, trasladando aprendizajes globales a realidades locales complejas.",
+    "leadership": "Hoy, René Silva entiende el desarrollo social no como un discurso, sino como un resultado medible de una ejecución bien hecha. Su liderazgo se centra en construir equipos, procesos y relaciones institucionales que permitan cumplir lo pactado, incluso en los escenarios más exigentes. Ese enfoque ha definido la cultura de Panitex desde su origen y sigue siendo el centro de la confiabilidad que caracteriza a la empresa."
+  },
+  "Historia": {
+    "title": "Nuestra Historia",
+    "subtitle": "Un recorrido de dedicación y compromiso",
+    "breadcrumbLabel": "Nuestra Historia",
+    "events": {
+      "2009": {
+        "title": "Fundación y primer gran contrato",
+        "description": "Se funda Panitex. Ese mismo año ejecuta su primera facturación relevante con Totto, suministrando camisetas a gran escala, consolidando capacidades productivas y logísticas."
+      },
+      "2010": {
+        "title": "Desarrollo de material balístico",
+        "description": "Inicio de la línea de material balístico, enfocada en chalecos antibalas, marcando la entrada de Panitex al sector de protección y seguridad."
+      },
+      "2011": {
+        "title": "Blindaje vehicular",
+        "description": "Expansión hacia el blindaje de vehículos, fortaleciendo el conocimiento técnico y normativo en soluciones de protección para contextos de riesgo."
+      },
+      "2016": {
+        "title": "Primer contrato con formación institucional",
+        "description": "Ejecución del primer contrato con la Escuela de Suboficiales, suministrando dotaciones especializadas y validando la capacidad de cumplimiento en entornos institucionales exigentes."
+      },
+      "2018": {
+        "title": "Primer contrato con la UNP",
+        "description": "Inicio de operaciones con la Unidad Nacional de Protección (UNP), entregando dotaciones especializadas para comunidades indígenas y abriendo una nueva etapa de impacto social en territorios de alta complejidad."
+      },
+      "2019": {
+        "title": "Línea marítima y fluvial",
+        "description": "Desarrollo de la línea de transporte marítimo y fluvial, integrando embarcaciones, motores y accesorios para mejorar la movilidad en regiones de difícil acceso."
+      },
+      "2020": {
+        "title": "Blindaje arquitectónico",
+        "description": "Lanzamiento de la línea de blindaje arquitectónico, incluyendo cerramientos, puertas, ventanas y sistemas electrónicos de protección para personas e instalaciones en riesgo."
+      },
+      "2020-2026": {
+        "title": "Escalamiento territorial",
+        "description": "Panitex amplía su alcance y llega a más de 150 comunidades indígenas, implementando sistemas integrales de movilidad, comunicación, protección y dotación especializada, consolidando su rol como aliado estratégico del Estado."
+      }
+    }
+  },
+  "PurposeValues": {
+    "title": "Nuestro Propósito y Valores",
+    "breadcrumbLabel": "Nuestro Propósito y Valores",
+    "sections": {
+      "reliability": {
+        "title": "Ser confiables, siempre",
+        "subtitle": "Coherencia, cumplimiento y responsabilidad",
+        "content": "La confianza no se declara, se demuestra. La construimos cumpliendo lo acordado, respetando la normativa y respondiendo por cada decisión que tomamos. En entornos de alta exigencia institucional, la coherencia entre lo que se promete y lo que se entrega es esencial. Asumimos la responsabilidad integral de cada contrato, coordinando proveedores, equipos y territorios —incluidos aliados locales— con un único objetivo: cumplir, sin excusas, con quienes confían en nosotros."
+      },
+      "service": {
+        "title": "Servir donde más se necesita",
+        "subtitle": "La infraestructura como responsabilidad social",
+        "content1": "Entendemos la infraestructura como un deber con la sociedad y una forma concreta de ejercer lo público. En Panitex, cada sistema que implementamos —movilidad marítima y fluvial, protección, comunicaciones o dotaciones especializadas— busca reducir brechas en territorios donde el acceso, la seguridad y la presencia institucional son limitados. Servir donde más se necesita implica ejecutar con rigor, respeto por las personas y comprensión del territorio, generando soluciones que fortalecen el tejido social y la acción del Estado.",
+        "content2": "Cuando el contexto lo permite, articulamos nuestro trabajo con proveedores locales —incluidos astilleros regionales y comunitarios— para fortalecer capacidades productivas y asegurar soluciones pertinentes y sostenibles."
+      },
+      "excellence": {
+        "title": "Ejecutar con excelencia",
+        "subtitle": "Hacer las cosas bien, incluso bajo presión",
+        "content": "La excelencia no es una promesa, es una disciplina. Operamos en contextos donde la complejidad técnica, la distancia y el riesgo exigen precisión, planificación y consistencia. Ejecutar con excelencia significa anticipar escenarios, coordinar múltiples actores y cumplir con estándares técnicos y normativos sin desviaciones. Integrar capacidades locales y especializadas —desde logística hasta producción— nos permite responder con eficacia en territorios de alta complejidad y entregar resultados confiables, aun bajo condiciones exigentes."
+      },
+      "ethics": {
+        "title": "Actuar con ética y transparencia",
+        "subtitle": "Integridad sin atajos",
+        "content": "Cada decisión que tomamos está guiada por principios claros de legalidad, integridad y apertura. Operamos con total transparencia, especialmente en entornos de contratación pública donde la confianza es un activo que debe protegerse. Rechazamos los atajos, los conflictos de interés y las prácticas opacas. Actuar con ética es una responsabilidad individual y colectiva que se refleja en cómo contratamos, ejecutamos y rendimos cuentas, incluyendo la relación clara y responsable con proveedores y aliados en territorio."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "phoneLabel": "Teléfono",
+    "phonePlaceholder": "+57 300 123 4567",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre tu proyecto o consulta...",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successMessage": "Gracias por contactarnos. Te responderemos pronto.",
+    "errorTitle": "Error al enviar",
+    "errorMessage": "Hubo un problema. Por favor intenta de nuevo.",
+    "nameRequired": "El nombre es requerido",
+    "emailRequired": "El correo electrónico es requerido",
+    "emailInvalid": "Correo electrónico inválido",
+    "messageRequired": "El mensaje es requerido",
+    "contactInfo": "Información de Contacto",
+    "phone": "Teléfono",
+    "email": "Email",
+    "location": "Ubicación",
+    "locationValue": "Bogotá, Colombia"
+  },
+  "IndustryDetail": {
+    "projectsTitle": "Proyectos",
+    "noProjects": "Proyectos en ejecución, vuelve pronto.",
+    "client": "Cliente",
+    "year": "Año",
+    "viewSecop": "Ver en SECOP →",
+    "aboutPanitex": "Sobre Panitex",
+    "socialResponsibility": {
+      "title": "Responsabilidad social en Panitex",
+      "content": "Desde los sistemas que implementamos hasta la forma en que los ejecutamos, Panitex trabaja para fortalecer el desarrollo social en territorios de alta complejidad."
+    },
+    "ceo": {
+      "title": "Conoce a nuestro CEO",
+      "content": "René Silva cuenta con más de 30 años de experiencia en contratación pública y privada. Su trayectoria guiada siempre por el mismo dictum: \"Ser confiables, siempre\"."
+    },
+    "reliability": {
+      "title": "Ser confiables, siempre",
+      "content": "La confiabilidad se construye cumpliendo. En Panitex, honramos cada compromiso mediante una ejecución rigurosa, el respeto por la normativa y la responsabilidad total sobre los resultados."
+    }
+  }
+}

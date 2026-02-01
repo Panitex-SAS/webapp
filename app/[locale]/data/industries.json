@@ -1,0 +1,74 @@
+[
+  {
+    "id": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte Marítimo y Fluvial",
+      "en": "Maritime and River Transport"
+    },
+    "description": {
+      "es": "Soluciones marítimas y fluviales para territorios de difícil acceso.",
+      "en": "Maritime and river solutions for hard-to-reach territories."
+    },
+    "image": "/images/industrias/transporte_maritimo_y_fluvial.jpg"
+  },
+  {
+    "id": "blindaje_arquitectonico",
+    "name": {
+      "es": "Blindaje Arquitectónico",
+      "en": "Architectural Armor"
+    },
+    "description": {
+      "es": "Infraestructura y blindaje para entornos de riesgo institucional.",
+      "en": "Infrastructure and armor for institutional risk environments."
+    },
+    "image": "/images/industrias/blindaje_arquitectonico2.jpg"
+  },
+  {
+    "id": "radio_coms",
+    "name": {
+      "es": "Radiocomunicaciones",
+      "en": "Radio Communications"
+    },
+    "description": {
+      "es": "Conectividad operativa mediante sistemas de radiocomunicación.",
+      "en": "Operational connectivity through radio communication systems."
+    },
+    "image": "/images/industrias/radio_coms.png"
+  },
+  {
+    "id": "equipos_de_buceo",
+    "name": {
+      "es": "Equipos de Buceo y Comunicación Subacuática",
+      "en": "Diving and Underwater Communication Equipment"
+    },
+    "description": {
+      "es": "Equipos de buceo y comunicación para operaciones subacuáticas.",
+      "en": "Diving and communication equipment for underwater operations."
+    },
+    "image": "/images/industrias/equipos_de_buceo.png"
+  },
+  {
+    "id": "adulto_mayor",
+    "name": {
+      "es": "Adulto Mayor",
+      "en": "Senior Citizens"
+    },
+    "description": {
+      "es": "Dotaciones y asistencia básica para población adulta mayor.",
+      "en": "Equipment and basic assistance for elderly population."
+    },
+    "image": "/images/industrias/adulto_mayor.jpg"
+  },
+  {
+    "id": "dotaciones_especializadas",
+    "name": {
+      "es": "Dotaciones Especializadas",
+      "en": "Specialized Equipment"
+    },
+    "description": {
+      "es": "Dotaciones técnicas para entidades y comunidades.",
+      "en": "Technical equipment for entities and communities."
+    },
+    "image": "/images/industrias/dotaciones_especializadas.jpg"
+  }
+]

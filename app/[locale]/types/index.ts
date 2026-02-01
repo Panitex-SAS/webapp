@@ -1,19 +1,24 @@
 // Shared TypeScript types for the application
 
+export interface LocalizedString {
+  es: string;
+  en: string;
+}
+
 export interface Industry {
   id: string;
-  name: string;
-  description: string;
+  name: LocalizedString;
+  description: LocalizedString;
   image?: string;
 }
 
 export interface Project {
   id: string;
-  name: string;
+  name: LocalizedString;
   industryId: string;
-  description: string;
+  description: LocalizedString;
   client: string | null;
   year: string;
-  image: string;
+  image?: string;
   sourceUrl: string | null;
 }

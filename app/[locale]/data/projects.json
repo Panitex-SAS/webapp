@@ -1,0 +1,215 @@
+[
+  {
+    "id": "transporte_maritimo_contrato_1044_2022",
+    "industryId": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1044 de 2022",
+      "en": "Maritime Transport (Commercial Vessels) — Contract 1044 of 2022"
+    },
+    "description": {
+      "es": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
+      "en": "Maritime and river transport project/contract focused on commercial maritime vessels."
+    },
+    "client": "Unidad Nacional de Protección (UNP)",
+    "year": "2022",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.2938808&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "transporte_maritimo_contrato_1045_2020",
+    "industryId": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1045 de 2020",
+      "en": "Maritime Transport (Commercial Vessels) — Contract 1045 of 2020"
+    },
+    "description": {
+      "es": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
+      "en": "Maritime and river transport project/contract focused on commercial maritime vessels."
+    },
+    "client": null,
+    "year": "2020",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1465478&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "transporte_maritimo_contrato_1096_2020",
+    "industryId": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1096 de 2020",
+      "en": "Maritime Transport (Commercial Vessels) — Contract 1096 of 2020"
+    },
+    "description": {
+      "es": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
+      "en": "Maritime and river transport project/contract focused on commercial maritime vessels."
+    },
+    "client": null,
+    "year": "2020",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1503172&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "transporte_maritimo_contrato_1411_2022",
+    "industryId": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 1411 de 2022 (Ejecutado en UT)",
+      "en": "Maritime Transport (Commercial Vessels) — Contract 1411 of 2022 (Executed in Joint Venture)"
+    },
+    "description": {
+      "es": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales. Ejecutado en UT.",
+      "en": "Maritime and river transport project/contract focused on commercial maritime vessels. Executed in Joint Venture."
+    },
+    "client": null,
+    "year": "2022",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.3449531&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "transporte_maritimo_contrato_2078_2024",
+    "industryId": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 2078 de 2024 (Ejecutado en UT)",
+      "en": "Maritime Transport (Commercial Vessels) — Contract 2078 of 2024 (Executed in Joint Venture)"
+    },
+    "description": {
+      "es": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales. Ejecutado en UT.",
+      "en": "Maritime and river transport project/contract focused on commercial maritime vessels. Executed in Joint Venture."
+    },
+    "client": null,
+    "year": "2024",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.6357924&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "transporte_maritimo_contrato_962_2019",
+    "industryId": "transporte_maritimo_y_fluvial",
+    "name": {
+      "es": "Transporte marítimo (Embarcaciones marítimas comerciales) — Contrato 962 de 2019",
+      "en": "Maritime Transport (Commercial Vessels) — Contract 962 of 2019"
+    },
+    "description": {
+      "es": "Proyecto/contrato de transporte marítimo y fluvial enfocado en embarcaciones marítimas comerciales.",
+      "en": "Maritime and river transport project/contract focused on commercial maritime vessels."
+    },
+    "client": null,
+    "year": "2019",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.961604&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "blindaje_arquitectonico-contrato-1047-2020",
+    "industryId": "blindaje_arquitectonico",
+    "name": {
+      "es": "Blindaje arquitectónico — Contrato 1047 de 2020",
+      "en": "Architectural Shielding — Contract 1047 of 2020"
+    },
+    "description": {
+      "es": "Proyecto/contrato de infraestructura de protección aplicada a edificaciones (blindaje arquitectónico y seguridad física pasiva).",
+      "en": "Protection infrastructure project/contract applied to buildings (architectural shielding and passive physical security)."
+    },
+    "client": null,
+    "year": "2020",
+    "image": "",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1477734&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "blindaje_arquitectonico-contrato-1226-2022",
+    "industryId": "blindaje_arquitectonico",
+    "name": {
+      "es": "Blindaje arquitectónico — Contrato 1226 de 2022",
+      "en": "Architectural Shielding — Contract 1226 of 2022"
+    },
+    "description": {
+      "es": "Proyecto/contrato de infraestructura de protección aplicada a edificaciones (blindaje arquitectónico y seguridad física pasiva).",
+      "en": "Protection infrastructure project/contract applied to buildings (architectural shielding and passive physical security)."
+    },
+    "client": null,
+    "year": "2022",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.3196626&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "blindaje_arquitectonico-contrato-1369-2021",
+    "industryId": "blindaje_arquitectonico",
+    "name": {
+      "es": "Blindaje arquitectónico — Contrato 1369 de 2021",
+      "en": "Architectural Shielding — Contract 1369 of 2021"
+    },
+    "description": {
+      "es": "Proyecto/contrato de infraestructura de protección aplicada a edificaciones (blindaje arquitectónico y seguridad física pasiva).",
+      "en": "Protection infrastructure project/contract applied to buildings (architectural shielding and passive physical security)."
+    },
+    "client": null,
+    "year": "2021",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.2341457&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+
+  {
+    "id": "dotaciones_especializadas_contrato_649_2018",
+    "industryId": "dotaciones_especializadas",
+    "name": {
+      "es": "Enfoque diferencial (Dotaciones especializadas) — Contrato 649 de 2018",
+      "en": "Differential Approach (Specialized Equipment) — Contract 649 of 2018"
+    },
+    "description": {
+      "es": "Proyecto/contrato de suministro de dotaciones técnicas especializadas y soporte a misiones específicas.",
+      "en": "Specialized technical equipment supply project/contract and support for specific missions."
+    },
+    "client": null,
+    "year": "2018",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.540213&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "dotaciones_especializadas_contrato_963_2019",
+    "industryId": "dotaciones_especializadas",
+    "name": {
+      "es": "Enfoque diferencial (Dotaciones especializadas) — Contrato 963 de 2019",
+      "en": "Differential Approach (Specialized Equipment) — Contract 963 of 2019"
+    },
+    "description": {
+      "es": "Proyecto/contrato de suministro de dotaciones técnicas especializadas y soporte a misiones específicas.",
+      "en": "Specialized technical equipment supply project/contract and support for specific missions."
+    },
+    "client": null,
+    "year": "2019",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.961604&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+
+  {
+    "id": "radiocomunicaciones-contrato-649-2018",
+    "industryId": "radio_coms",
+    "name": {
+      "es": "Radiocomunicaciones — Contrato 649 de 2018",
+      "en": "Radio Communications — Contract 649 of 2018"
+    },
+    "description": {
+      "es": "Proyecto/contrato asociado a diseño e implementación de redes de radiocomunicación (coordinación institucional, emergencia, seguridad y operación).",
+      "en": "Project/contract associated with design and implementation of radio communication networks (institutional coordination, emergency, security and operations)."
+    },
+    "client": null,
+    "year": "2018",
+    "sourceUrl": null
+  },
+  {
+    "id": "radiocomunicaciones-contrato-904-2020",
+    "industryId": "radio_coms",
+    "name": {
+      "es": "Radiocomunicaciones — Contrato 904 de 2020",
+      "en": "Radio Communications — Contract 904 of 2020"
+    },
+    "description": {
+      "es": "Proyecto/contrato asociado a diseño e implementación de redes de radiocomunicación (coordinación institucional, emergencia, seguridad y operación).",
+      "en": "Project/contract associated with design and implementation of radio communication networks (institutional coordination, emergency, security and operations)."
+    },
+    "client": null,
+    "year": "2020",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1393069&isFromPublicArea=True&isModal=true&asPopupView=true"
+  },
+  {
+    "id": "radiocomunicaciones-contrato-964-2019",
+    "industryId": "radio_coms",
+    "name": {
+      "es": "Radiocomunicaciones — Contrato 964 de 2019",
+      "en": "Radio Communications — Contract 964 of 2019"
+    },
+    "description": {
+      "es": "Proyecto/contrato asociado a diseño e implementación de redes de radiocomunicación (coordinación institucional, emergencia, seguridad y operación).",
+      "en": "Project/contract associated with design and implementation of radio communication networks (institutional coordination, emergency, security and operations)."
+    },
+    "client": null,
+    "year": "2019",
+    "sourceUrl": "https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.961604&isFromPublicArea=True&isModal=true&asPopupView=true"
+  }
+]

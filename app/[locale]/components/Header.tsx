@@ -1,26 +1,29 @@
 "use client";
 
-import Link from "next/link";
+import {Link} from "@/i18n/routing";
 import Image from "next/image";
 import { useState, useCallback } from "react";
-import industriesData from "@/app/data/industries.json";
-import nosotrosData from "@/app/data/nosotros.json";
-import type { Industry } from "@/app/types";
+import {useTranslations, useLocale} from 'next-intl';
+import industriesData from "@locale/data/industries.json";
+import nosotrosData from "@locale/data/nosotros.json";
+import type { Industry, LocalizedString } from "@locale/types";
+import LanguageSwitcher from "@locale/components/LanguageSwitcher";
 
 interface NosotrosSection {
   id: string;
-  name: string;
+  name: LocalizedString;
   image: string;
 }
 
 export default function Header() {
+  const t = useTranslations('Header');
+  const locale = useLocale() as 'es' | 'en';
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isNosotrosOpen, setIsNosotrosOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const industries = industriesData as Industry[];
   const nosotrosSections = nosotrosData as NosotrosSection[];
 
-  // Debounced handlers to prevent excessive re-renders
   const handleIndustriesMouseEnter = useCallback(() => {
     setIsIndustriesOpen(true);
     setIsNosotrosOpen(false);
@@ -62,7 +65,7 @@ export default function Header() {
                 href="/" 
                 className="text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
               >
-                Inicio
+                {t('inicio')}
               </Link>
             </li>
             <li 
@@ -75,7 +78,7 @@ export default function Header() {
                 aria-expanded={isNosotrosOpen}
                 aria-haspopup="true"
               >
-                Nosotros
+                {t('nosotros')}
                 <svg 
                   className={`w-4 h-4 ml-1 transition-transform ${isNosotrosOpen ? 'rotate-180' : ''}`}
                   fill="none" 
@@ -96,7 +99,7 @@ export default function Header() {
                 aria-expanded={isIndustriesOpen}
                 aria-haspopup="true"
               >
-                Sistemas de Desarrollo Social
+                {t('sistemas')}
                 <svg 
                   className={`w-4 h-4 ml-1 transition-transform ${isIndustriesOpen ? 'rotate-180' : ''}`}
                   fill="none" 
@@ -112,43 +115,45 @@ export default function Header() {
                 href="/contactanos" 
                 className="text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
               >
-                Contáctanos
+                {t('contactanos')}
               </Link>
             </li>
           </ul>
           
-          {/* Spacer to balance the logo - Desktop only */}
-          <div className="hidden lg:block w-30"></div>
-          
-          {/* Hamburger Menu Button - Mobile only */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-red-600 transition-colors"
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Language Switcher and Hamburger - Desktop and Mobile */}
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+            
+            {/* Hamburger Menu Button - Mobile only */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-2 text-gray-700 hover:text-red-600 transition-colors"
+              aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
         
         {/* Mobile Menu - Shown when hamburger is clicked */}
@@ -161,7 +166,7 @@ export default function Header() {
                   className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Inicio
+                  {t('inicio')}
                 </Link>
               </li>
               <li>
@@ -170,7 +175,7 @@ export default function Header() {
                   className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium mb-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Nosotros
+                  {t('nosotros')}
                 </Link>
                 <ul className="ml-4 flex flex-col gap-2">
                   {nosotrosSections.map((section) => (
@@ -180,7 +185,7 @@ export default function Header() {
                         className="block text-gray-600 hover:text-red-600 transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        {section.name}
+                        {section.name[locale]}
                       </Link>
                     </li>
                   ))}
@@ -192,7 +197,7 @@ export default function Header() {
                   className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium mb-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Sistemas de Desarrollo Social
+                  {t('sistemas')}
                 </Link>
                 <ul className="ml-4 flex flex-col gap-2">
                   {industries.map((industry) => (
@@ -202,7 +207,7 @@ export default function Header() {
                         className="block text-gray-600 hover:text-red-600 transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        {industry.name}
+                        {industry.name[locale]}
                       </Link>
                     </li>
                   ))}
@@ -214,7 +219,7 @@ export default function Header() {
                   className="block text-lg text-gray-700 hover:text-red-600 transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Contáctanos
+                  {t('contactanos')}
                 </Link>
               </li>
             </ul>
@@ -236,7 +241,7 @@ export default function Header() {
                     href={`/nosotros/${section.id}`}
                     className="text-gray-700 hover:text-red-600 transition-colors font-medium text-base"
                   >
-                    {section.name}
+                    {section.name[locale]}
                   </Link>
                   {index < nosotrosSections.length - 1 && (
                     <span className="text-gray-300 mx-4">|</span>
@@ -262,7 +267,7 @@ export default function Header() {
                     href={`/industrias/${industry.id}`}
                     className="text-gray-700 hover:text-red-600 transition-colors font-medium text-base"
                   >
-                    {industry.name}
+                    {industry.name[locale]}
                   </Link>
                   {index < industries.length - 1 && (
                     <span className="text-gray-300 mx-4">|</span>
