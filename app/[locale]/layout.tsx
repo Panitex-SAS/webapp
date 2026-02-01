@@ -28,13 +28,13 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
   return {
     title: {
       default: locale === 'es' 
-        ? "Panitex - Soluciones Industriales y Desarrollo Social"
-        : "Panitex - Industrial Solutions and Social Development",
+        ? "Panitex - Soluciones integrales de desarrollo social"
+        : "Panitex - Comprehensive Social Development Solutions",
       template: "%s | Panitex"
     },
     description: locale === 'es'
-      ? "Panitex S.A.S - Líderes en soluciones industriales y sistemas de desarrollo social. Impacto en 127 comunidades indígenas con proyectos de infraestructura pública en Colombia."
-      : "Panitex S.A.S - Leaders in industrial solutions and social development systems. Impact on 127 indigenous communities with public infrastructure projects in Colombia.",
+      ? "Panitex S.A.S - Líderes en soluciones integrales de sistemas de desarrollo social. Impacto en 177 comunidades indígenas con proyectos de infraestructura pública."
+      : "Panitex S.A.S - Leaders in comprehensive social development systems solutions. Impact on 177 indigenous communities with public infrastructure projects.",
     keywords: locale === 'es' 
       ? ["Panitex", "soluciones industriales", "desarrollo social", "comunidades indígenas", "infraestructura pública", "Colombia", "proyectos sociales"]
       : ["Panitex", "industrial solutions", "social development", "indigenous communities", "public infrastructure", "Colombia", "social projects"],

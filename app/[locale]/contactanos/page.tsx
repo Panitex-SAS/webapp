@@ -164,19 +164,7 @@ export default function ContactanosPage() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 mb-1">{t('email')}</p>
-                    <a href="mailto:rene.silva@panitex.com.co" className="text-gray-800 hover:text-red-600 transition-colors font-medium">rene.silva@panitex.com.co</a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="shrink-0 w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">{t('phone')}</p>
-                    <a href="tel:+573158522816" className="text-gray-800 hover:text-red-600 transition-colors font-medium">+57 315 852 2816</a>
+                    <a href="mailto:rene.silva@panitex.com.co" className="text-gray-800 hover:text-red-600 transition-colors font-medium break-all">rene.silva@panitex.com.co</a>
                   </div>
                 </div>
                 
@@ -196,15 +184,15 @@ export default function ContactanosPage() {
               
               <div className="pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  {locale === 'es' ? 'Nuestro equipo está listo para atender tus necesidades en proyectos de infraestructura pública y desarrollo social.' : 'Our team is ready to assist with your public infrastructure and social development project needs.'}
+                  {t('teamReady')}
                 </p>
               </div>
             </div>
 
             {/* Contact Form Card */}
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">{locale === 'es' ? 'Envíanos un mensaje' : 'Send us a message'}</h3>
-              <form onSubmit={handleSubmit} className="space-y-5" aria-label={locale === 'es' ? 'Formulario de contacto' : 'Contact form'}>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">{t('sendMessage')}</h3>
+              <form onSubmit={handleSubmit} className="space-y-5" aria-label={t('formLabel')}>
                 {/* Status Messages */}
                 {submitStatus === 'success' && (
                   <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -293,7 +281,7 @@ export default function ContactanosPage() {
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full px-6 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-[1.02] transition-all shadow-lg hover:shadow-xl disabled:bg-gray-400 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center space-x-2"
-                  aria-label="Enviar formulario de contacto"
+                  aria-label={t('submitLabel')}
                 >
                   {isSubmitting ? (
                     <>

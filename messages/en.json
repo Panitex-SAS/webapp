@@ -50,7 +50,7 @@
     "description": "Comprehensive solutions for public infrastructure development",
     "projects": "Projects",
     "noProjects": "No projects available",
-    "backToIndustries": "Back to Systems"
+    "backToIndustries": "Back to Social Development Systems"
   },
   "Nosotros": {
     "ceo": "Our CEO",
@@ -158,7 +158,11 @@
     "phone": "Phone",
     "email": "Email",
     "location": "Location",
-    "locationValue": "Bogotá, Colombia"
+    "locationValue": "Bogotá, Colombia",
+    "teamReady": "Our team is ready to assist with your public infrastructure and social development project needs.",
+    "sendMessage": "Send us a message",
+    "formLabel": "Contact form",
+    "submitLabel": "Submit contact form"
   },
   "IndustryDetail": {
     "projectsTitle": "Projects",

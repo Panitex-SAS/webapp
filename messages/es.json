@@ -50,7 +50,7 @@
     "description": "Soluciones integrales para el desarrollo de infraestructura pública",
     "projects": "Proyectos",
     "noProjects": "No hay proyectos disponibles",
-    "backToIndustries": "Volver a Sistemas"
+    "backToIndustries": "Volver a Sistemas de Desarrollo Social"
   },
   "Nosotros": {
     "ceo": "Nuestro CEO",
@@ -158,7 +158,11 @@
     "phone": "Teléfono",
     "email": "Email",
     "location": "Ubicación",
-    "locationValue": "Bogotá, Colombia"
+    "locationValue": "Bogotá, Colombia",
+    "teamReady": "Nuestro equipo está listo para atender tus necesidades en proyectos de infraestructura pública y desarrollo social.",
+    "sendMessage": "Envíanos un mensaje",
+    "formLabel": "Formulario de contacto",
+    "submitLabel": "Enviar formulario de contacto"
   },
   "IndustryDetail": {
     "projectsTitle": "Proyectos",
