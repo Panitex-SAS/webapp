@@ -12,12 +12,15 @@ export default function middleware(request: NextRequest): NextResponse {
   // - Next.js internals
   // - API routes
   // - Any path starting with /images (with or without locale prefix)
+  // - sitemap.xml and robots.txt
   if (
     pathname.match(/\.(jpg|jpeg|png|gif|svg|ico|webp|avif|woff|woff2|ttf|otf|eot)$/i) ||
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.startsWith('/images') ||
-    pathname.includes('/images/')
+    pathname.includes('/images/') ||
+    pathname === '/sitemap.xml' ||
+    pathname === '/robots.txt'
   ) {
     return NextResponse.next();
   }
@@ -34,7 +37,7 @@ export default function middleware(request: NextRequest): NextResponse {
 export const config = {
   // Match all paths except static files and images
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|images).*)',
+    '/((?!_next/static|_next/image|favicon.ico|images|sitemap.xml|robots.txt).*)',
     '/(es|en)/:path*'
   ]
 };
